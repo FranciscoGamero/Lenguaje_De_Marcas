@@ -17,6 +17,6 @@
     text-align: center;
     font-size: 33pt;
     text-transform: uppercase;
-    background-image: url(../imagenes/fondo_trama.png);
+    background-image: url(../imagenes/fondo_jovenes.png),url(../imagenes/fondo_trama.png);
     background-size: cover;
 }
