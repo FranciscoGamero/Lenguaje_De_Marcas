@@ -1,0 +1,74 @@
+body{
+    background-color: rgba(35, 126, 187, 0.6);
+}
+
+div {
+    text-align: center;
+}
+
+
+p{
+    text-align: center;
+}
+
+@font-face {
+    font-family: "FuenteTitulo";
+    src: url(../fuentes/Ramisland.otf);
+}
+
+@font-face {
+    font-family: "FuentePoema";
+    src: url(../fuentes/Catalish\ Huntera.otf);
+}
+.titulo {
+    text-align: center;
+    letter-spacing: 14px;
+    font-family: "FuenteTitulo";
+    background-color: aqua;
+}
+
+h2 {
+    background-color: rgb(13, 18, 90);
+    text-decoration: underline;
+    font-size: 35px;
+    width: 100pt;
+}
+#entradaRimas1{
+    color: yellow;
+}
+
+#entradaRimas2{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#entradaRimas3{
+    color: lime;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.rima1{
+    background-color: rgba(71, 168, 233, 0.6);
+    font-family:'Courier New', Courier, monospace;
+    color: red;
+    line-height: 17pt;
+}
+
+.rima2{
+    text-align: right;
+    background-color: rgba(71, 168, 233, 0.6);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(76, 0, 255);
+    font-size: 1.1em;
+    line-height: 25px;
+}
+
+.rima3{
+    text-align: justify;
+    background-color: rgba(71, 168, 233, 0.6);
+    font-size: 17px;
+    color: white;
+    font-family: FuentePoema,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 20pt;
+
+}

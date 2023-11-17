@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes 3</title>
+    <style>
+        nav{
+            border: 3px solid blue;
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+        }
+        li{
+            border: 2px solid red;
+            flex-basis: 10%;
+            list-style-type: none;
+            flex-grow: 1;
+            flex-shrink: 4;
+            /* Se puede usar  flex: 1 4 40%;*/
+        }
+        li.doble{
+            flex-grow: 2;
+            /* Se puede usar  flex: 2 1 40%;*/
+
+        }
+        li.triple{
+            flex-grow: 3;
+            flex-shrink: 1;
+            /* Se puede usar  flex: 3 1 40%;*/
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <li>Primera opción</li>
+        <li class="doble">Segunda opción</li>
+        <li class="triple">Tercera opción</li>
+        <li>Cuarta opción</li>
+    </nav>
+</body>
+</html>

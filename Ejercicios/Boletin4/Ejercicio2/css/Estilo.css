@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Fuente1;
+    src: url(../fuente/kristen-itc.ttf);
+}
+#titulo{
+    box-sizing: border-box;
+    width: 800px;
+    height: 565px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-color: white;
+    border-width: 0px;
+    border-radius: 50px;
+    color: white;
+    font-family: Fuente1,"Berlin Sans FB",Arial;
+    text-align: center;
+    font-size: 33pt;
+    text-transform: uppercase;
+    background-image: url(../imagenes/fondo_trama.png);
+    background-size: cover;
+}

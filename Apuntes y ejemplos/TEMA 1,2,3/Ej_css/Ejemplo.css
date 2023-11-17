@@ -1,0 +1,16 @@
+h1{
+   font-size: 21pt; 
+   color: red;
+}
+h2{
+    background-color: black;
+    color: white;
+    text-align: center; /*No se aplica porque es mas prioritario el style en el html*/
+}
+p{
+    font-size: 10pt
+}
+body{
+    color: blue;
+}
+/* se linkea en el archivo html con: <link rel="stylesheet" type="text/css" href="dirección"*/

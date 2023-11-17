@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes</title>
+    <style>
+        *{
+            box-sizing: border-box; /* Se pone asi para que todas las cajas del
+            html tengan como máximo de tamaño el width que le pongamos*/
+        }
+        p{
+            
+            box-sizing: border-box;
+            width: 30%;
+            height: 50px;
+            border-style: solid dashed;
+            border-width: 10px;
+            background-color: lightyellow;
+            border-top-left-radius: 25px 50%;
+            border-bottom-left-radius: 25px 50%;
+            padding: 15px;
+        }
+        #uno{
+            border-style: dashed;
+            padding: 15px;
+            margin: 20px 10px 5px 25px;
+        }
+        .img_redonda{
+            
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: solid;
+            overflow: hidden;
+        }
+        div{
+            width: 33%;
+            height: 5000px;
+            background-image: url(La_Giralda.jpg);
+            background-repeat: no-repeat;
+            background-color: beige;
+            background-position: center top;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="#" alt="Imagen">  
+    </header>
+    <main>
+        <p id="uno">ESTO ES UNA CAJA</p>
+        <p>ESTO ES UNA CAJA</p>
+        <p>Esto es otra caja</p>
+        <div class="img_redonda">
+            <img src="La_Giralda.jpg" width="100%"></div>
+        
+        <div></div>
+    </main>
+</body>
+</html>

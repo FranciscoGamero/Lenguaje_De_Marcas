@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(251, 255, 0);
+    background-image: url('../Imagenes/Fondo.png');
+    background-position: center;
+    background-size:500px;
+    background-repeat: repeat-y;
+    background-position-x: 700px;
+}
+#titulo{
+    text-shadow: 10px 5px 7px rgb(87, 87, 2);
+    letter-spacing: 9px;
+    font-family: "FuenteTitulo";
+    font-size: 50pt;
+    background-color: blue;
+    color:yellow;
+    text-align: center;
+}
+
+#entradilla{
+    font-size: 15pt;
+}
+.subtitulos{
+    letter-spacing: 5px;
+    background-color: rgb(26, 100, 183);
+    font-size: 20pt;
+}
+@font-face {
+    font-family: "FuenteTitulo";
+    src: url(../fuentes/Basketball.otf);
+}
+.piedefoto{
+    text-decoration: overline;
+    font-size: 10pt;
+}
+.subrayado{
+    text-decoration: underline;
+}

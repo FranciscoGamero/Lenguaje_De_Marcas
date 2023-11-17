@@ -1,0 +1,27 @@
+section{
+    border: 3px solid blue;
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.boton{
+    text-align: center;
+    background-color: lightcoral;
+    padding: 8px;
+}
+
+section>p{
+    flex: 0 0 32%
+}
+
+section>p+p{
+    flex: 0 0 37%
+}
+
+section div{
+    flex: 0 0 25%;
+}
+section p img{
+    width: 50%;
+}

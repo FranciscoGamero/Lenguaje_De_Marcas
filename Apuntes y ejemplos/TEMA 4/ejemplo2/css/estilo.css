@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+#envolvente{
+    width: 85%; /*Asi el */
+    margin: 0 auto;
+    min-width: 650px;
+}
+#envolvente header img{
+    width: 100%;
+}
+
+#envolvente #contenido{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#envolvente #contenido nav{
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    padding: 20px 3%;
+}
+#envolvente #contenido main{
+    flex: 1 1 60%;
+    padding: 20px 3%;
+}
+#envolvente #contenido aside{
+    flex: 1 1 20%;  
+    background-color: black;
+}
+#envolvente #contenido aside .anuncio{
+    background-color: orange;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+}
+#envolvente #contenido aside .anuncio img{
+ width: 95%;
+ padding-top: 15px;
+}
+#envolvente #contenido aside .anuncio img+p{
+    width: 75%;
+    margin: 3px auto;
+}
+#envolvente footer{
+    background-color: orange;
+    display: flex;
+}
+#envolvente footer #pieizq{
+    padding: 10px 15%;
+    flex: 1 1 50%;
+}

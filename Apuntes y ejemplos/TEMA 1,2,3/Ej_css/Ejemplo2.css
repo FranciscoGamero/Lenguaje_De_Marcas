@@ -1,0 +1,22 @@
+body {
+    font-size: 14pt;
+    background-color: rgba(128, 128, 128, 1);
+}
+
+h1{
+    background-color: black;
+    color: white;
+}
+
+.piefoto{
+    font-family: 'Comic Sans MS', Courier, monospace;
+    font-size: 0.8em;
+}
+p {
+    font-size: 14pt;
+}
+
+
+div {
+    text-align: center;
+}

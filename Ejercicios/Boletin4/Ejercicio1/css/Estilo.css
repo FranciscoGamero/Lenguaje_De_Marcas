@@ -1,0 +1,15 @@
+#titulo{
+    box-sizing: border-box;
+    color: red;
+    text-align: center;
+    font-size: 35pt;
+    font-family: "Comic Sans MS", 'Times New Roman', Times, serif;
+    border-style: dotted;
+    background-color: lime;
+    border-color: red;
+    width: 1250px;
+    height: 250px;
+    border-width: 5px;
+    border-radius: 20px;
+    padding: auto;
+}
