@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo3</title>
+    <style>
+        p {
+            border: 2px solid red;
+            text-align: center;
+            background-color: lightcoral;
+            position: relative;
+            z-index: 10;
+
+        }
+
+        section {
+            display: flex;
+            width: 75%;
+            position: relative;
+        }
+
+        section p {
+            flex: 1 1 auto;
+        }
+
+        .posicionado {
+            position: fixed;
+            bottom: 50%;
+            right: 0;
+            background-color: blue;
+            z-index: 5;
+        }
+
+        main {
+            width: 75%;
+            margin: 0 auto;
+            position: relative;
+            top: 50px;
+        }
+        h1{
+            width: 75%;
+            margin: 0 auto;
+            background-color: yellow;
+            position: fixed;
+            top: 0px;
+            left: 12.5%; /*No se porque pero esto pone la cabecera en medio*/
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LA CABECERA</h1>
+    </header>
+    <main>
+        <p>Párrafo 0</p>
+
+        <section>
+
+            <p>Párrafo 1</p>
+
+            <p class="posicionado">Párrafo 2</p>
+
+            <p>Párrafo 3</p>
+        </section>
+
+        <p>Párrafo 4</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui commodi quam cumque veritatis odit
+            assumenda ipsam autem expedita architecto fugit quos in temporibus laboriosam dolorum, rerum aliquam vel
+            asperiores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur deleniti excepturi impedit
+            cupiditate
+            voluptatibus eaque quaerat velit eum corporis, dolor in at omnis minima veritatis debitis alias ipsa unde
+            doloribus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, magni nobis. Nulla expedita id
+            itaque consectetur? Possimus accusantium, consequuntur sed assumenda laboriosam veniam blanditiis animi
+            illo, quo autem quos ipsa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus recusandae
+            soluta quos aperiam quia et, eaque laboriosam quod commodi ipsum ullam dolore ab voluptatum? Quod placeat
+            repellat laborum numquam perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, illo
+            dolores. Beatae perferendis mollitia minus quo debitis, nostrum similique quaerat saepe, explicabo dolorum
+            corrupti unde consectetur incidunt perspiciatis enim. Ratione. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Adipisci at, id natus suscipit doloremque itaque, enim ipsam a iure consectetur
+            exercitationem? Qui nihil modi aliquid eveniet dolorem? Maxime, corporis soluta! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Accusantium vero voluptates ratione dicta fugiat, voluptatem voluptatibus,
+            excepturi, explicabo enim dignissimos repellendus debitis repellat atque! Ea voluptatibus nam soluta.
+            Aperiam, alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia repellat possimus
+            asperiores et, vel sit eum magnam, perferendis, est debitis. Expedita error excepturi voluptate ratione
+            dicta vitae eum est.</p>
+    </main>
+
+    </p>
+</body>
+
+</html>
