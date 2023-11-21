@@ -12,9 +12,9 @@
 
 #envolvente #contenido{
     display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: stretch;/*Por defecto*/
+    flex-direction: row;/*Por defecto*/
+    justify-content: space-between;/*Por defecto*/
 }
 #envolvente #contenido nav{
     flex-basis: 20%;
