@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+#envolvente{
+    width: 85%; /*Asi el */
+    margin: 0 auto;
+    min-width: 650px;
+}
+#envolvente header{
+    width: 100%;
+    background-color: rgb(37, 150, 190);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#envolvente header h1{
+    color: white;
+    text-align: center;
+}
+nav{
+    display: flex;
+    background-color: rgba(155, 187, 89,255);
+}
+nav p{
+
+}
