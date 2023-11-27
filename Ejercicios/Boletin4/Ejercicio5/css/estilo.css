@@ -9,18 +9,18 @@
 #envolvente header{
     width: 100%;
     background-color: rgb(37, 150, 190);
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 #envolvente header h1{
     color: white;
     text-align: center;
 }
-nav{
+#envolvente nav{
     display: flex;
     background-color: rgba(155, 187, 89,255);
 }
-nav p{
+#envolvente nav p{
     margin-left: 10px;
     color: white;
     font-size: 25px;
@@ -32,6 +32,7 @@ nav p{
     justify-content: space-between;/*Por defecto*/
 }
 #envolvente #contenido main{
+    width: 50%;
     flex: 1 1 60%;
     padding: 20px 3%;
 }
@@ -40,6 +41,12 @@ nav p{
     flex: 1 1 25%;  
     background-color: rgb(37, 150, 190);
     color: white;
+<<<<<<< HEAD
+=======
+    text-align: center;
+    font-size: 14px;
+    width: 25%;
+>>>>>>> feed29ed5147c2468963833e40a4fc7790d2c7ee
 }
 #envolvente #contenido #izq h1{
     text-align: center;
@@ -61,7 +68,11 @@ nav p{
 }
 #envolvente #contenido #dch{
     width: 25%;
+<<<<<<< HEAD
     flex: 1 1 25%;
+=======
+    flex: 1 1 30%;  
+>>>>>>> feed29ed5147c2468963833e40a4fc7790d2c7ee
     background-color: rgb(37, 150, 190);
     color: white;
     text-align: center;

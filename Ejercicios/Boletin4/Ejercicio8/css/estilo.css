@@ -5,21 +5,31 @@
     display: flex;
    flex-direction: row;
     justify-content: space-between;
-    width: 85%;
+    width: 75%;
 }
-/*#envoltorio header{
+body header{
     border: solid;
-    margin: 0px 10%;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 15px;
     text-align: center;
 }
-*/
+body header h1{
+    font-size: 30px;
+}
+
+#envoltorio {
+    margin: 0 auto;
+}
 #envoltorio .botones{
-    padding-top: 120px;
+    padding-top: 20%; /*Cambiar esto cuando lo pongamos en el proyecto para que quede bien (con el porcentaje debería estar correcto)*/
     text-align: center;
     flex: 10% 0 0;
     width: 20%;
     border: solid;
+    border-radius: 15px;
     flex-direction: column;
+    margin: 15px;
 }
 #envoltorio .botones img{
     width: 90%;
@@ -27,16 +37,16 @@
 #envoltorio main{
     flex: 20%, 1 1;
     border: solid;
+    border-radius: 15px;
     text-align: center;
 }
 #envoltorio main img{
     width: 50%;
 }
-#envoltorio footer{
-    background-color: orange;
-    display: flex;
+body footer{
+    text-align: right;
+    margin-top: 15px;
+    border: solid;
+    padding-right: 5%;
 }
-#envol footer #pieizq{
-    padding: 10px 15%;
-    flex: 1 1 50%;
-}
+
