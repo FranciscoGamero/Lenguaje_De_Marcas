@@ -1,0 +1,29 @@
+/* Estilos generales para el contenedor */
+.contenedor {
+    display: flex;
+    align-items: stretch;
+    flex-direction:row;/*Por defecto*/
+    justify-content: space-between;/*Por defecto*/
+    flex-wrap: wrap; /* Para que las cajas se ajusten al ancho de la pantalla y se envuelvan si no caben en una fila */
+    justify-content: space-around; /* Distribuir las cajas equitativamente */
+  }
+  
+  /* Estilos para las cajas de imágenes */
+  .caja {
+    flex: 1 0 200px; /* Flex-grow, flex-shrink, flex-basis (tamaño inicial) */
+    max-width: 300px; /* Ancho máximo de las cajas */
+  }
+  
+  .caja img {
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho de su contenedor */
+    height: auto; /* Para mantener la proporción de aspecto */
+  }
+  /* Estilos para ajustar cuando se reduce el ancho */
+.contenedor {
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center; /* Centra las cajas en el eje X */
+  }
+  
+.caja {
+flex: 1 1 80%; /* Ocupa el 80% del ancho disponible */
+}

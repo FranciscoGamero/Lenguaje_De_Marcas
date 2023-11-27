@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+#todo{
+    width: 85%; /*Asi el */
+    margin: 0 auto;
+    min-width: 650px;
+}
+#todo main img{
+    width: 100%;
+}
+#todo footer {
+    color: yellow;
+    padding-left: 10px;
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    background-color: darkblue;
+    border: solid cyan;
+}
+#todo footer #correos{
+    padding-left: 15px;
+    margin-left: 8px;
+}
+#todo footer #origen {
+    flex: 1 1 100%;
+}
+#todo footer #derechos {
+    flex: 1 1 100%;
+    text-align: right;
+    padding-right: 15px;
+}
+
