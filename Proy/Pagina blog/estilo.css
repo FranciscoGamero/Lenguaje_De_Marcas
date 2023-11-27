@@ -1,0 +1,23 @@
+#contenido{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#contenido main{
+    flex: 1 1 80%;
+}
+#contenido main section{
+    border: solid;
+    margin-top: 30px;
+}
+#contenido aside{
+    border-radius: 15px;
+    flex: 1 1 20%;
+    margin-left: 20px;
+}
+#contenido aside .anuncio{
+    margin-top: 10px;
+    flex: 1 1 50%;
+    border: solid;
+}
