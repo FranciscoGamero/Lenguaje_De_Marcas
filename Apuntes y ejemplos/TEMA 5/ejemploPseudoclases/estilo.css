@@ -1,0 +1,50 @@
+h1{
+    color:red;
+}
+h1:hover+p{
+    display: none;
+}
+h1+p{
+    display: none;
+}
+h1:hover+p{
+    display: inherit;
+}
+div{
+    width: 25%;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+}
+div:hover{
+    background-color: #fff;
+    color: #000;
+    border: solid;
+}
+a{
+    color: green;
+}
+a:visited{
+    color: red;
+}
+div:target{
+    background-color: red;
+}
+div:first-child{
+    background-color: yellow;
+}
+div:first-of-type{
+    background-color: green;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+nav ul li{
+    background-color: beige;
+    flex: 1 1 auto;
+    padding: 0.5%;
+    text-align: center;
+}
