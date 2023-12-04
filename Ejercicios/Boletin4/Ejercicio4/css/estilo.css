@@ -1,6 +1,54 @@
 *{
     box-sizing: border-box;
 }
-header{
-    
+body{
+    background-color: blueviolet;
 }
+#caja{
+    width: 85%;
+    margin: 0 auto;
+
+}
+#caja header{
+    border: solid;
+    border-radius: 16px;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+#caja header h1{
+    text-align: center;
+}
+#caja #contenido{
+    min-height: 500px;
+    display: flex;
+}
+#caja #contenido main{
+    flex: 1 1 75%;
+    background-color: aqua;
+    border: solid;
+    border-radius: 16px;
+}
+
+#caja aside {
+    margin-left: 10px;
+    display: flex;
+    flex: 1 1 25%;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+#caja #contenido aside #derecha img {
+    margin-top: 25%;
+    border-radius: 15px;
+    width: 150px;
+}
+#caja #contenido aside #anuncio{
+    padding: 25p;
+    margin-top: 25%;
+    background-color: white;
+    color: black;
+    border-radius: 16px;
+    padding-bottom: 100%;
+}
+
