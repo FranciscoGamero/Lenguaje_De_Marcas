@@ -19,13 +19,24 @@ div{
 div:hover{
     background-color: #fff;
     color: #000;
-    border: solid;
+
 }
 a{
-    color: green;
+    color: red;
 }
 a:visited{
     color: red;
+}
+div{
+    color: black;
+    width: 140px;
+    height: 60px;
+    background-image: url(fondodoble.png);
+}
+div:hover{
+    background-position: bottom; /*Para que el fondo cambie por la imagen de abajo*/
+    transition: all 1s;
+    background-position: ;
 }
 div:target{
     background-color: red;
@@ -42,9 +53,23 @@ nav ul{
     justify-content: space-between;
     padding: 0px;
 }
-nav ul li{
-    background-color: beige;
+nav ul a{
+    background-color: green;
     flex: 1 1 auto;
     padding: 0.5%;
     text-align: center;
+    border-right: solid red;
+}
+nav ul a:first-child{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+nav ul a:last-child{
+    border-right: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav ul a:hover{
+    background-color: red;
+    color: green;
 }
