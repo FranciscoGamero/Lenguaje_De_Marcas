@@ -36,7 +36,6 @@ div{
 div:hover{
     background-position: bottom; /*Para que el fondo cambie por la imagen de abajo*/
     transition: all 1s;
-    background-position: ;
 }
 div:target{
     background-color: red;
