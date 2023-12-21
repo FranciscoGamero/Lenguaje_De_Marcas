@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    width: 100%;
+    height: 300px;
+    padding-top: 120px;
+    text-align: center;                  /*Si pones top/bottom y left/right lo hace de esquina a esquina*/
+    background-image: linear-gradient(to bottom, #db162f 25%, #dbdfac 50%, #5f758e 80%, #383961 90%, #3b1f2b 100%); /*De abajo a arriba, del color 1 al color 2, si pones el porcentaje, cambia la transición de los colores*/
+}                                        /*Se pueden poner tambien con ángulos, con deg (40deg = 40º)*/
+
+h2{
+    width: 100%;
+    height: 300px;
+    padding-top: 120px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #db162f 50%, #dbdfac 50%);
+}
+h3{
+    width: 100%;
+    height: 300px;
+    padding-top: 120px;
+    text-align: center;
+   /* background-image: linear-gradient(25 deg, rgba(219, 22, 47,0.5)25%, rgba(219, 223,172,0.5)
+    25%, rgba(219, 223,172,0.5) 50%, rgba(95, 117, 142, 0.5) 50%,) linear-gradient(-25 deg, rgba(219, 22, 47,0.5)25%, rgba(219, 223,172,0.5)
+    25%, rgba(219, 223,172,0.5) 50%, rgba(95, 117, 142, 0.5) 50%);*/
+   /* background-image: repeating-linear-gradient(142deg, yellow, red 1%, yellow 2%);*/
+   /* background-image: radial-gradient(circle closest-side at 25% 50%, white, black);*/
+    background-image: repeating-radial-gradient(circle closest-side at center, white 5%, black 10%, white 15%);
+}

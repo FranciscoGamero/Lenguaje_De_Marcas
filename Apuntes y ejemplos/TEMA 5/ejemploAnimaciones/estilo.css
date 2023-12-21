@@ -1,0 +1,72 @@
+div{
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: greenyellow;
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 5px;
+
+    position: relative; /*La caja debe tener posicion relativa para que pueda tener animaciones*/
+  /*  animation-name: cuadradoYcolores; /*Se le establece la animacion*/
+    animation-duration: 0.1s; /*Lo que tarda la animacion*/
+    animation-delay: 0.1s; /*El retraso con el que se hace*/
+    animation-fill-mode: both; /*Establece el estilo del final de la animacion a la caja*/
+    animation-iteration-count: infinite; /*El número de veces que se repite, podemos poner infinite*/
+    animation-direction: alternate; /*Como se desarrolla la animacion, si de delante hacia atras o de atras hacia delante*/
+}
+div:hover{
+    animation-play-state: running;
+    position: relative; 
+    animation-name: temblor; 
+    animation-duration: 0.1s; 
+    animation-delay: 0.1s; 
+    animation-fill-mode: both; 
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; 
+    animation-play-state: paused;
+}
+@keyframes cuadradoYcolores {
+    0%{
+        background-color: greenyellow;
+        top: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: blueviolet;
+        top: 0px;
+        left: 200px;
+    }
+    50%{
+        background-color: indianred;
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: lightgoldenrodyellow;
+        top: 200px;
+        left: 0px;
+    }
+    100%{
+        background-color: hotpink;
+        top: 0px;
+        top: 0px;
+    }
+}
+@keyframes temblor {
+    0%{
+        rotate: -2deg;
+    }
+    33%{
+        rotate: 2deg;
+    }
+    66%{
+        rotate: -2deg;
+    }
+    100%{
+        rotate: 2deg;
+    }
+    
+}

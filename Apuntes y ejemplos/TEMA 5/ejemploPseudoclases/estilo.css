@@ -1,15 +1,22 @@
 h1{
     color:red;
+    transition: all 2s;
+    margin: 0;
+    width: 30%;
+}
+h1:hover{
+    margin: 0 auto;
 }
 h1:hover+p{
     display: none;
 }
-h1+p{
+/*h1+p{
     display: none;
 }
 h1:hover+p{
     display: inherit;
-}
+}*/
+
 div{
     width: 25%;
     background-color: #000;
@@ -53,6 +60,7 @@ nav ul{
     padding: 0px;
 }
 nav ul a{
+    transition: /*Es mejor poner el all*/ 0.5s;
     background-color: green;
     flex: 1 1 auto;
     padding: 0.5%;
@@ -69,6 +77,13 @@ nav ul a:last-child{
     border-top-right-radius: 10px;
 }
 nav ul a:hover{
+   /* transition: Es mejor poner el all 0.5s; SE PONEN EN EL NORMAL, NO EN EL HOVER*/
     background-color: red;
     color: green;
+}
+section{
+    display: none;
+}
+section:target{
+    display: inherit;
 }
