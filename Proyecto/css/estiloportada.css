@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+#todo{
+    width: 85%; /*Asi el */
+    margin: 0 auto;
+    min-width: 650px;
+}
+#todo main img{
+    width: 100%;
+}
+#todo footer {
+    color: yellow;
+    padding-left: 10px;
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    background-color: darkblue;
+    border: solid cyan;
+}
+#todo footer #informacion{
+    flex-direction: column-reverse;
+}
+#todo footer #nombres{
+    margin-left: 10px;
+}
+#todo footer #correos{
+    padding-left: 15px;
+    margin-left: 150px;
+}
+#todo footer #origen {
+    display: flex;
+    flex: 1 1 100%;
+    margin-left: 10px;
+}
+#todo footer #derechos {
+    flex: 1 1 100%;
+    text-align: right;
+    margin-right: 20px;
+}
+

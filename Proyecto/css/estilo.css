@@ -1,0 +1,331 @@
+/*Maquetacion General*/
+*{
+    box-sizing: border-box;
+}
+#contenido{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+header{
+    justify-content: center;
+    background-position: bottom, center;
+    border: solid;
+    display: flex;
+    background-color: darkblue;
+    color: blue;
+    height: 300px;
+    border-radius: 28px;
+    background-image:url(..//img/letras-cabecera.webp), url(..//img/cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: 25%, 90%;
+}
+#contenido nav{
+    position: fixed;
+}
+
+#contenido nav div{
+    background-color: rgb(167, 245, 255);
+    border: 5px solid darkblue;
+    margin-top: 10px;
+    border: solid;
+    flex: 1 1 25%;
+    margin-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#contenido nav li{
+    margin-left: -20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+#contenido main{
+    margin-left: 15%;
+    flex: 1 1 60%;
+
+}
+#contenido main section{
+    background-color: rgb(167, 245, 255);
+    border: 5px solid darkblue;
+    border: solid;
+    margin-top: 30px;
+}
+#contenido main section h2{
+    margin-left: 10px;
+    font-size: 40px;
+}
+#contenido main section h3{
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(121, 121, 121);
+}
+#contenido main section p{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+#contenido aside{
+    border-radius: 15px;
+    flex: 1 1 20%;
+    margin-left: 20px;
+}
+#contenido aside .anuncio{
+    margin-top: 10px;
+    flex: 1 1 50%;
+    border: solid;
+}
+footer {
+    color: yellow;
+    padding-left: 10px;
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    background-color: darkblue;
+    border: solid cyan;
+}
+footer #correos{
+    padding-left: 15px;
+    margin-left: 8px;
+}
+footer #origen {
+    flex: 1 1 100%;
+}
+footer #derechos {
+    flex: 1 1 100%;
+    text-align: right;
+    padding-right: 15px;
+}
+body{background-color: rgb(40, 40, 255);
+}
+/*ESTO ES DEL INDICE */
+
+
+#contenidoindice{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#contenidoindice main{
+    flex: 1 1 60%;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+#contenidoindice main section{
+    border: solid;
+    margin-top: 30px;
+    border-radius: 10px 200px;
+    background-color: rgb(167, 245, 255);
+}
+
+#contenidoindice main section h3{
+    text-align: center;
+    color: rgb(121, 121, 121);
+}
+
+#contenidoindice aside{
+    border-radius: 15px;
+    flex: 1 1 20%;
+    margin-left: 20px;
+}
+#todo #contenidoindice aside .anuncio{
+    border: solid;
+    flex: 1 1 50%;
+    margin-top: 10px;
+}
+
+/*ESTO ES LA GALERÍA DE IMAGENES*/
+
+#contenidogaleria{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#contenidogaleria nav{
+    border: solid;
+    flex: 1 1 5%;
+    margin-right: 20px;
+}
+
+#contenidogaleria main{
+    flex: 1 1 60%;    
+}
+
+#contenidogaleria main section{
+    border: solid;
+    margin-top: 30px;
+}
+
+#contenidogaleria main section h3{
+
+    color: rgb(121, 121, 121);
+}
+
+#contenidogaleria aside{
+    border-radius: 15px;
+    flex: 1 1 20%;
+    margin-left: 20px;
+}
+
+#todo #contenidogaleria aside .anuncio{
+    margin-top: 10px;
+    flex: 1 1 50%;
+    border: solid;
+}
+
+/*FOTOS*/
+#todo #contenidogaleria main section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(167, 245, 255);
+    border: 5px solid darkblue;
+    border-radius: 15px;
+    margin: 2%;
+    padding: 4px 4px 4px 4px;
+    width: 300px;
+    height: 250px;
+}
+
+#todo #contenidogaleria main section img{
+    border: 5px solid darkblue;
+    border-radius: 15px;
+    width: 80%;
+    height: 75%;
+    margin:auto;
+}
+
+#todo #contenidogaleria main section p{
+        text-align: center;
+        align-items: baseline;
+}
+
+#todo #contenidogaleria main{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: wrap;
+}
+#todo nav{
+    position: fixed;
+    width: 15%;
+}
+#todo nav div{
+    background-color: rgb(167, 245, 255);
+    border: 5px solid darkblue;
+    margin-top: 10px;
+    border: solid;
+    flex: 1 1 25%;
+    margin-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#todo nav li{
+    margin-left: -20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+/* ESTO ES LA PAGINA DE LOS CAMPEONES*/
+
+#contenido main .campeon img{
+    margin-left: 10px;
+}
+#contenido main .campeon #top{
+    background-color: rgb(167, 245, 255);
+    border: 5px solid darkblue;
+    border: solid;
+    margin-top: 30px;
+}
+#contenido main .campeon #top  h1{
+    margin-left: 50px;
+    font-size: 40px;
+}
+#contenido main .campeon #top  h3{
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(121, 121, 121);
+}
+#contenido main .campeon #top  p{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+/* ESTO ES EL CARROUSEL*/
+.carrousel{
+    display: flex;
+}
+.carrousel img {
+    flex: 1 1 20%;
+}
+.carrousel .envoltorio{
+    flex: 1 1 80%;
+}
+.envoltorio{
+    display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+body header{
+    border: solid;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+body header h1{
+    font-size: 30px;
+}
+
+.envoltorio{
+    width: 100%;
+}
+.envoltorio .botones{ /*Cambiar esto cuando lo pongamos en el proyecto para que quede bien (con el porcentaje debería estar correcto)*/
+    flex: 1 1 10%;
+    border: solid;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.envoltorio .botones img{ 
+    margin-top: 50px;
+    width: 100%;
+}
+.envoltorio main{
+    margin-right: 60px;
+    flex: 0 0 50%;
+    border: solid;
+    border-radius: 15px;
+}
+.envoltorio main img{
+    margin-left: 1px;
+    margin-top: 2px;
+    border-radius: 15px;
+    width: 99%;
+}
+
+.footercarrousel{
+    margin: 2px;
+    text-align: right;
+    margin-top: 15px;
+    padding-right: 5%;
+    color: black;
+    border: solid;
+}
+#top .footercarrousel{
+    background-color: darkred;
+}
+#top{
+    border: solid 5px;
+    background-color: red;
+}
+#mid{
+    margin-top: 10px;
+    border: solid 5px;
+    background-color: yellow;
+}
+#mid .footercarrousel{
+    background-color: darkgoldenrod;
+}

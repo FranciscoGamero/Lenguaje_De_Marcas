@@ -1,0 +1,78 @@
+#contenido{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+header{
+    justify-content: center;
+    background-position: bottom, center;
+    border: solid;
+    display: flex;
+    background-color: bisque;
+    color: rgb(241, 223, 117);
+    height: 300px;
+    border-radius: 28px;
+    background-image:url(..//img/letras-cabecera.webp), url(..//img/cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: 25%, 90%;
+}
+
+#contenido nav{
+    border: solid;
+    flex: 1 1 5%;
+    margin-right: 20px;
+}
+
+#contenido main{
+    flex: 1 1 60%;
+}
+
+#contenido main section{
+    border: solid;
+    margin-top: 30px;
+    border-radius: 10px 200px;
+    background-color: rgb(167, 245, 255);
+}
+
+#contenido main section h3{
+    text-align: center;
+    color: rgb(121, 121, 121);
+}
+
+#contenido aside{
+    border-radius: 15px;
+    flex: 1 1 20%;
+    margin-left: 20px;
+}
+
+#todo #contenido aside .anuncio{
+    margin-top: 10px;
+    flex: 1 1 50%;
+    border: solid;
+}
+#todo footer {
+    color: yellow;
+    padding-left: 10px;
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    background-color: darkblue;
+    border: solid cyan;
+}
+#todo footer #correos{
+    padding-left: 15px;
+    margin-left: 8px;
+}
+#todo footer #origen {
+    flex: 1 1 100%;
+}
+#todo footer #derechos {
+    flex: 1 1 100%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#todo{
+    background-color: rgb(40, 40, 255);
+}
