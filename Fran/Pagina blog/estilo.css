@@ -1,0 +1,57 @@
+#contenido{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    border: solid;
+}
+#contenido nav{
+    position: fixed;
+}
+#contenido nav div{
+    margin-top: 10px;
+    border: solid;
+    flex: 1 1 25%;
+    margin-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#contenido nav li{
+    margin-left: -20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+#contenido main{
+    margin-left: 15%;
+    flex: 1 1 60%;
+}
+#contenido main section{
+    border: solid;
+    margin-top: 30px;
+}
+#contenido main section h2{
+    margin-left: 10px;
+    font-size: 40px;
+}
+#contenido main section h3{
+    margin-left: 10px;
+    font-size: 30px;
+    color: rgb(121, 121, 121);
+}
+#contenido main section p{
+    font-size: 20px;
+    margin: 10px 10px;
+}
+#contenido aside{
+    border-radius: 15px;
+    flex: 1 1 20%;
+    margin-left: 20px;
+}
+#contenido aside .anuncio{
+    margin-top: 10px;
+    flex: 1 1 50%;
+    border: solid;
+}

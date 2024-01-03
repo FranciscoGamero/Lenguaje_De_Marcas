@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+#todo{
+    background-color: rgba(68,68,69,255);
+}
+a {
+    text-decoration: none;
+    color: #b9b9b9;
+}
+nav{
+    width: 50%;
+    margin: 0 auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 1%;
+}
+nav ul li p{
+    font-size: 12px;
+}

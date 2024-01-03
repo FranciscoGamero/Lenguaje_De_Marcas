@@ -1,0 +1,27 @@
+main{
+    perspective: 100px; /*Se le dice al contenedor*/
+}
+div{
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20pt;
+    text-align: center;
+    background-color: greenyellow;
+    margin-top: 10px;
+    transition: all 1s;
+
+    transform-style: preserve-3d; /*Se le dice al elemento padre*/
+}
+div h1{
+    
+}
+div:hover{
+    transform: scale(1.08);
+   /* transform: skewX(180deg);
+    transform: rotate: 90deg;
+    transform: translateY(50px);
+    backface-visibility:hidden;*/
+    transform: rotateY(180deg);
+}

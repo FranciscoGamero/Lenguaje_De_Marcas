@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    width: 85%;
+    margin: 0 auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+nav ul li{
+    background-color: #40bdc3;
+    color: #d8f0f6;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 2%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav ul li:hover{
+    background-color: #ffffff;
+    color: #565656;
+
+}

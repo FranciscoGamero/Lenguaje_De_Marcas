@@ -21,9 +21,12 @@ body{
     background-color: darkblue;
     border: solid cyan;
 }
+<<<<<<<< HEAD:Proyecto/css/estiloportada.css
 #todo footer #informacion{
     flex-direction: column-reverse;
 }
+========
+>>>>>>>> 48a6858b45bb6d2083e6e60c3f9fdf932fbefa96:Fran/Portada/Css_portada/estilo.css
 #todo footer #nombres{
     margin-left: 10px;
 }

@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    width: 85%;
+    margin: 0 auto;
+}
+nav ul{
+    list-style-type: none;
+    margin-left: 0px;
+    background-color: dimgrey;
+    color: whitesmoke;
+}
+nav ul li{
+    padding: 10px;
+}
+nav>ul{
+    display: flex; /*Para que solo sea flex el de el primer nivel*/
+}
+nav>ul>li{
+    flex: 1 1 auto;
+    height: 45px;
+}
+nav>ul>li>ul>li{    /*Esto esconde el segundo nivel del menú*/
+    height: 0px;    /*Se le quita la altura*/
+    padding: 0px;   /*Se le quita el tamaño*/
+    overflow: hidden; /*Se esconde el contenido y se puede hacer de diferentes formas, con font size 0 por ejemplo*/
+    transition: all 0.5s;
+}
+nav>ul>li:hover>ul>li{ /*Esto muestra el segundo el nivel del menú al posicionarte sobre el li al que pertenece*/
+    height: 40px;
+    padding: inherit;
+}

@@ -1,0 +1,89 @@
+h1{
+    color:red;
+    transition: all 2s;
+    margin: 0;
+    width: 30%;
+}
+h1:hover{
+    margin: 0 auto;
+}
+h1:hover+p{
+    display: none;
+}
+/*h1+p{
+    display: none;
+}
+h1:hover+p{
+    display: inherit;
+}*/
+
+div{
+    width: 25%;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+}
+div:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+a{
+    color: red;
+}
+a:visited{
+    color: red;
+}
+div{
+    color: black;
+    width: 140px;
+    height: 60px;
+    background-image: url(fondodoble.png);
+}
+div:hover{
+    background-position: bottom; /*Para que el fondo cambie por la imagen de abajo*/
+    transition: all 1s;
+}
+div:target{
+    background-color: red;
+}
+div:first-child{
+    background-color: yellow;
+}
+div:first-of-type{
+    background-color: green;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+nav ul a{
+    transition: /*Es mejor poner el all*/ 0.5s;
+    background-color: green;
+    flex: 1 1 auto;
+    padding: 0.5%;
+    text-align: center;
+    border-right: solid red;
+}
+nav ul a:first-child{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+nav ul a:last-child{
+    border-right: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav ul a:hover{
+   /* transition: Es mejor poner el all 0.5s; SE PONEN EN EL NORMAL, NO EN EL HOVER*/
+    background-color: red;
+    color: green;
+}
+section{
+    display: none;
+}
+section:target{
+    display: inherit;
+}

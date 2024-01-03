@@ -253,6 +253,7 @@ body{background-color: rgb(40, 40, 255);
     margin: 10px 10px;
 }
 /* ESTO ES EL CARROUSEL*/
+<<<<<<< HEAD
 .carrousel{
     display: flex;
 }
@@ -262,6 +263,8 @@ body{background-color: rgb(40, 40, 255);
 .carrousel .envoltorio{
     flex: 1 1 80%;
 }
+=======
+>>>>>>> 48a6858b45bb6d2083e6e60c3f9fdf932fbefa96
 .envoltorio{
     display: flex;
    flex-direction: row;
@@ -279,6 +282,7 @@ body header h1{
     font-size: 30px;
 }
 
+<<<<<<< HEAD
 .envoltorio{
     width: 100%;
 }
@@ -329,3 +333,53 @@ body header h1{
 #mid .footercarrousel{
     background-color: darkgoldenrod;
 }
+=======
+.envoltorio {
+    margin: 0 auto;
+}
+.envoltorio .botones{
+    padding-top: 20%; /*Cambiar esto cuando lo pongamos en el proyecto para que quede bien (con el porcentaje debería estar correcto)*/
+    text-align: center;
+    flex: 10% 0 0;
+    width: 20%;
+    border: solid;
+    border-radius: 15px;
+    flex-direction: column;
+    margin: 15px;
+}
+.envoltorio .botones img{
+    width: 90%;
+}
+.envoltorio main{
+    flex: 20%, 1 1;
+    border: solid;
+    border-radius: 15px;
+    text-align: center;
+}
+.envoltorio main img{
+    width: 50%;
+}
+body footer{
+    text-align: right;
+    margin-top: 15px;
+    border: solid;
+    padding-right: 5%;
+}
+
+.carrousel{
+    display: flex;
+}
+.carrousel img {
+    flex: 1 1 20%;
+}
+.carrousel .envoltorio{
+    flex: 1 1 80%;
+}
+#top{
+    background-color: red;
+}
+#top footer{
+    color: black;
+    background-color: darkred;
+}
+>>>>>>> 48a6858b45bb6d2083e6e60c3f9fdf932fbefa96
