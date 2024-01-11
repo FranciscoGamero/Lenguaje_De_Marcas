@@ -1,25 +1,16 @@
-*{
-    box-sizing: border-box;
-}
 nav{
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 nav ul{
-    width: 100%;
     background-color: #333333;
     color: white;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 0px;
 }
 nav ul li{
     flex: 1 1 auto;
     text-align: center;
     padding: 1%;
-}
-nav ul li:hover{
-    width: 200%;
-    background-color: #9b1c26;
 }

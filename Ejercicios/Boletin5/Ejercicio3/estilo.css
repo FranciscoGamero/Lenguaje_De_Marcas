@@ -23,6 +23,10 @@ nav ul li{
     text-align: center;
     padding: 1%;
 }
+nav ul li:hover a p{
+    color: white;
+    transition: 0.5s;
+}
 nav ul li p{
     font-size: 12px;
 }
