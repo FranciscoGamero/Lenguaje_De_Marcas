@@ -15,6 +15,6 @@ nav ul a{
     padding: 1%;
 }
 nav ul a:hover{
-    background-color: red;
-    transform: scaleY(1.05);
+    background-color: #9b1c26;
+    transform: scaleY(1.08);
 }

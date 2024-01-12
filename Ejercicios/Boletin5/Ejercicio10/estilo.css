@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+}
+nav ul{
+    flex-direction: column;
+    list-style-type: none;
+}
+nav ul li{
+    background-color: rgba(0, 81, 255, 0.76);
+    color: white;
+}
+nav ul li i{
+    padding: 10px;
+    margin-right: 50px;
+    font-size: 40px;
+}
+nav ul li p{
+    padding-left: 25px;
+    overflow: hidden;
+    font-size: 0;
+    transition: 0.5s;
+    background-color: rgb(33, 41, 38);
+    margin-bottom: auto;
+    margin-top: auto;
+}
+nav ul li:hover p{
+    font-size: inherit;
+    margin-bottom: auto;
+    margin-top: auto;
+}
