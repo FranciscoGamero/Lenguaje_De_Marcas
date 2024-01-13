@@ -1,0 +1,20 @@
+nav{
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul{
+    background-color: #333333;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul a{
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 1%;
+}
+nav ul a:hover{
+    background-color: #9b1c26;
+    transform: scaleY(1.08);
+}

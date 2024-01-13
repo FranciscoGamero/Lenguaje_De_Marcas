@@ -4,15 +4,17 @@
 nav{
     width: 85%;
     margin: 0 auto;
+    border: solid white;
 }
 nav ul{
     list-style-type: none;
-    margin-left: 0px;
-    background-color: dimgrey;
-    color: whitesmoke;
+    padding-left: 0px;
+    background-color: #004390;
+    color: #F18F01;
 }
 nav ul li{
     padding: 10px;
+    text-align: center;
 }
 nav>ul{
     display: flex; /*Para que solo sea flex el de el primer nivel*/
@@ -31,6 +33,9 @@ nav>ul>li>ul>li{    /*Esto esconde el segundo nivel del menú*/
 }
 nav>ul>li:hover>ul>li{ /*Esto muestra el segundo el nivel del menú al posicionarte sobre el li al que pertenece*/
     height: 40px;
-    padding: inherit;
+    padding: 40px;
     font-size: inherit;
+    text-align: center;
+    background-color: #0264a5;
+    
 }

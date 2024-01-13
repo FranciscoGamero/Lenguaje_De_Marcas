@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    width: 85%;
+    margin: 0 auto;
+}
+/*nav li{
+    /*dimensiones de la caja y propiedades
+    background-image: ;
+}
+nav li#inicio /*Foto del inicio{
+    background-position: ;
+}
+nav li#nuevo, /*Foto Nuevo{
+    background-position: ;
+}
+nav li#editar, /*Foto Editar{
+    background-position: ;
+}
+nav li#ver, /*Foto Visualizar{
+    background-position: ;
+}
+nav li#imagen, /*Foto Imagen{
+    background-position: ;
+}*
