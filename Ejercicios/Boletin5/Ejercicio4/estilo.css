@@ -2,26 +2,17 @@
     box-sizing: border-box;
 }
 nav{
-    width: 85%;
-    margin: 0 auto;
-}
-nav ul{
-    list-style: none;
+    width: 8%;
+    margin-left: 50px;
     display: flex;
-    justify-content: space-between;
-    padding: 0px;
+    flex-direction: column;
 }
-nav ul li{
-    background-color: #40bdc3;
-    color: #d8f0f6;
-    flex: 1 1 auto;
-    text-align: center;
-    padding: 2%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+nav img{
+    border: solid;
+    transition: all 1s;
 }
-nav ul li:hover{
-    background-color: #ffffff;
-    color: #565656;
-
+nav img:hover{
+    background-color: black;
+    height: 100px;
+    padding: inherit;
 }
