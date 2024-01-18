@@ -5,6 +5,16 @@ body{
     background-color: #83d2d7;
 }
 nav{
+<<<<<<< HEAD:Ejercicios/Boletin5/Ejercicio4/estilo.css
+    width: 8%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+nav img{
+    border: solid;
+    transition: all 1s;
+=======
     width: 85%;
     margin: 0 auto;
 }
@@ -32,4 +42,10 @@ section:target{
     display: inherit;
     background-color: white;
     margin-top: -16px;
+>>>>>>> 2612696adf5949ce0c959778d8ad7a484528cb04:Ejercicios/Boletin5/Ejercicio5/estilo.css
+}
+nav img:hover{
+    background-color: black;
+    height: 100px;
+    padding: inherit;
 }

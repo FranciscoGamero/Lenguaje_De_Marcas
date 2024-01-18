@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 250px;
+    margin-left:25%;
+    margin-top: 50px;
+}
+ul{
+    padding: 0;
+    border: solid;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+ul li{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url(img/DashIcons-removebg-preview.png);
+}
+ul li:hover{
+    background-color: cyan;
+}
+ul #inicio{
+    background-position: -117px 0px;
+    border-right: solid;
+}
+ul #nuevo{
+    background-position: -57px -55px;
+    border-right: solid;
+}
+ul #editar{
+    background-position: 3px -55px;
+    border-right: solid;
+}
+ul #ver{
+    background-position: -59px -166px;
+    border-right: solid;
+}
+ul #imagen{
+    background-position: -415px -55px;
+}

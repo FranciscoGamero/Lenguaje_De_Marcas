@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+}
+
+img {
+    height: 50px;
+}
+
+nav {
+    background-color: rgb(0, 132, 255);
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    border: solid blue;
+}
+nav p{
+    font-size: 9pt;
+    color: rgb(0, 0, 102);
+}
+#izquierda {
+    width: 50%;
+    display: flex;
+}
+
+#izquierda #imagen {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+    overflow: hidden;
+    transition: 0.5s;   
+}
+
+#izquierda #imagen:hover {
+    width: 30%;
+}
+
+#izquierda p {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#derecha {
+    margin-left: 25%;
+    margin-right: 10px;
+    display: flex;
+}
+
+#derecha p {
+    margin-top: 25px;
+    margin-left: 40px;
+}
