@@ -1,0 +1,25 @@
+table{
+    margin-top: 300px;
+    width: 550;
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin-left: 35%;
+    /*caption-side: bottom Para poner el caption debajo de la tabla*/
+}
+td,th{
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+}
+th{
+    background-color: green;
+}
+tr:first-of-type{
+    background-color: green;
+}
+tfoot td{
+    background-color: white;
+}
+tfoot td{
+    font-size: 0.6em;
+}
