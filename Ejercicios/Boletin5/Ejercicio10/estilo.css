@@ -3,33 +3,45 @@
 }
 body{
     margin: 0 auto;
+    background-image: linear-gradient(to bottom, #FCBCB8, #A7E8BD);
+    background-attachment: fixed;
 }
 nav{
+    position: relative;
+    right: -80px;
+    top: 30px;
     display: flex;
-    width: 100%;
+    width: 20%;
     font-size: 40px;
 }
 nav ul{
+    transform: translateX(-500px);
+    width: 100%;
     flex-direction: column;
     list-style-type: none;
+    transition: 0.5s all;
+}
+nav i:hover+ul{
+    transform: translateX(0px);
 }
 nav ul li{
-    background-color: rgba(0, 81, 255, 0.76);
+    padding-left: 10px;
+    font-size: 40px;
+    background-color: #FFD972;
     color: white;
 }
-nav ul li i{
-    padding: 10px;
-    margin-right: 50px;
-    font-size: 40px;
-}
 nav ul li p{
+    margin-right: 100px;
     padding-left: 25px;
     overflow: hidden;
     font-size: 0;
     transition: 0.5s;
-    background-color: rgb(33, 41, 38);
+    background-color: #EFA7A7;
     margin-bottom: auto;
     margin-top: auto;
+}
+nav ul li i{
+    margin-right: 20px;
 }
 nav ul li:hover p{
     font-size: inherit;

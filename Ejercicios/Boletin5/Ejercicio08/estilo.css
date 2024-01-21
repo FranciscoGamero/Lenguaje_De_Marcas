@@ -22,10 +22,14 @@ nav ul li i{
     margin-right: 50px;
     font-size: 40px;
 }
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
 nav ul li p{
     padding-left: 25px;
     overflow: hidden;
-    font-size: 0;
+    font-size: 0px;
     transition: 0.5s;
     background-color: rgb(33, 41, 38);
     margin-bottom: auto;
@@ -35,4 +39,5 @@ nav ul li:hover p{
     font-size: inherit;
     margin-bottom: auto;
     margin-top: auto;
+    padding-right: 10px;
 }

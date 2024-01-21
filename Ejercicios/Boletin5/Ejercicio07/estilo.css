@@ -17,25 +17,28 @@ nav ul li{
     text-align: center;
 }
 nav>ul{
-    display: flex; /*Para que solo sea flex el de el primer nivel*/
+    width: 700px;
+    display: flex; 
 }
 nav>ul>li{
     flex: 1 1 auto;
     height: 45px;
 }
-nav>ul>li>ul>li{    /*Esto esconde el segundo nivel del menú*/
-    height: 0px;    /*Se le quita la altura*/
-    padding: 0px;   /*Se le quita el tamaño*/
-    overflow: hidden; /*Se esconde el contenido y se puede hacer de diferentes formas, con font size 0 por ejemplo*/
+nav>ul>li>ul>li{   
+    position: relative; 
+    top: 15px;
+    height: 0px;    
+    padding: 0px;  
     font-size: 0px;
     text-align: left;
     transition: all 0.5s;
 }
-nav>ul>li:hover>ul>li{ /*Esto muestra el segundo el nivel del menú al posicionarte sobre el li al que pertenece*/
+nav>ul>li:hover>ul>li{
+    width: inherit;
     height: 40px;
     padding: 40px;
     font-size: inherit;
     text-align: center;
     background-color: #0264a5;
-    
+    top: 15px;
 }
