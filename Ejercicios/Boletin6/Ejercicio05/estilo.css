@@ -7,10 +7,12 @@ table{
 tr{
     text-align: center;
 }
-td:first-child, td:last-child{
-    background-color: black;
+th{
+    font-weight:lighter
 }
-
+td{
+    font-size: 25pt;
+}
 tr:nth-child(even) td:nth-child(even){
     background-color: #ffcf9e;
 }
