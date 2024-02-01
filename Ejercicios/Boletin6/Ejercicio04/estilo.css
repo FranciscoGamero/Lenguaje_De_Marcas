@@ -5,6 +5,7 @@ table{
 th{
     position: relative;
     height: 10px;
+    color: grey;
 }
 tr td div img{
     position: relative;
@@ -28,8 +29,11 @@ tr:first-child th:first-child{
 #puntuacion th{
     padding: 10px;
 }
-tr th:nth-child(3),tr th:nth-child(4){
-    color: gray;
+tr th:nth-child(2){
+    color: black;
+}
+.cabecera{
+    color: black;
 }
 tr .verde{
     width: 2.5px;

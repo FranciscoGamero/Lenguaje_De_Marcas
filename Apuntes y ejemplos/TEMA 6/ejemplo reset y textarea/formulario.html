@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    form{
+        background-color: chocolate;
+        border: solid 1.5px darkred;
+        padding: 2px;
+        width: 50%;
+    }
+    label{
+        display: block;
+        width: 33%;
+    }
+    input{
+        display: block;
+        width: 66%;
+    }
+    .filaFormulario{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    input:focus{ 
+        background-color: lightpink;
+        color: darkred;
+        border: solid 3px darkred;
+        outline: none;
+    }
+</style>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form name="registro" method="" action="" autocomplete novalidate enctype="multipart/form-data">
+            <div class="filaFormulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required autocomplete=""><br/>
+            </div>
+            <div class="filaFormulario">
+                <label for="apellido1">Primer apellido</label>
+                <input type="text" name="apellido1" id="apellido1" required placeholder="Su primer apellido aquí" autocomplete="">
+            </div>
+            <div class="filaFormulario">
+                <textarea name="apellido2" id="apellido" cols="30" rows="10" autofocus placeholder="Su segundo apellido aquí" aut></textarea>
+            </div>
+            <div class="filaFormulario">
+                <input type="reset" name="reset" id="reset" value="Borrar todo">
+            </div>
+        </form>
+    </body>
+</html>
