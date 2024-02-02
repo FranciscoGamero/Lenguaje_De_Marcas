@@ -1,5 +1,8 @@
+*{
+    box-sizing: border-box;
+}
 table{
-    width: 100%;
+    width: 1500px;
     border-collapse: collapse;
 }
 th{
@@ -24,6 +27,7 @@ tr:first-child th:first-child{
 #puntuacion{
     height: 40px;
     border-top: solid black 2.5px;
+    border-left: none;
     border-bottom: solid red 2.5px;
 }
 #puntuacion th{
@@ -34,10 +38,6 @@ tr th:nth-child(2){
 }
 .cabecera{
     color: black;
-}
-tr .verde{
-    width: 2.5px;
-    background-color: green;
 }
 .puntaje{
     position: relative;
@@ -53,4 +53,27 @@ tbody tr:nth-child(odd){
 tbody tr td:nth-child(4){
     font-weight: bolder;
 }
-
+tbody tr{
+    border-left: solid 3.5px grey;
+}
+tbody tr:nth-child(1),tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){
+    border-left: solid 3.5px green;
+}
+tbody tr:nth-child(5){
+    border-left: solid 3.5px yellow;
+}
+tbody tr:nth-child(6){
+    border-left: solid 3.5px rgb(255, 128, 0);
+}
+tbody tr:nth-child(18),tr:nth-child(19),tr:nth-child(20){
+    border-left: solid 3.5px red;
+}
+tbody tr:nth-child(20){
+    margin-bottom: 100px;
+}
+tfoot tr #champions{
+    border-left: solid 3.5px green;
+}
+.separator{
+    height: 50px;
+}
