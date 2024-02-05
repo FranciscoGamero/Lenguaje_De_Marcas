@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 table{
-    width: 1500px;
+    width: 100%;
     border-collapse: collapse;
 }
 th{
@@ -56,6 +56,9 @@ tbody tr td:nth-child(4){
 tbody tr{
     border-left: solid 3.5px grey;
 }
+tbody tr td{
+    width: 78.625px;
+}
 tbody tr:nth-child(1),tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){
     border-left: solid 3.5px green;
 }
@@ -71,9 +74,22 @@ tbody tr:nth-child(18),tr:nth-child(19),tr:nth-child(20){
 tbody tr:nth-child(20){
     margin-bottom: 100px;
 }
+.separator{
+    height: 50px;
+}
+tfoot td{
+    font-size: 10.5pt;
+}
 tfoot tr #champions{
     border-left: solid 3.5px green;
 }
-.separator{
-    height: 50px;
+tfoot tr #europa{
+    border-left: solid 3.5px yellow;
+
+}
+tfoot tr #conference{
+    border-left: solid 3.5px rgb(255, 128, 0);
+}
+tfoot tr #descenso{
+    border-left: solid 3.5px red;
 }
