@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es"> 
+	
+<head> 
+	<meta charset="utf-8" /> 
+	<title>Ejercicio1</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body> 
+	<main>
+		<h2>Formulario de Registro</h2> 
+		<form method="post" action="#"> 		
+			<fieldset>
+				<div>
+					<label for="nombre">Nombre</label> 
+					<input type="text" id="nombre" name="nombre" required> 
+				</div>
+				<div>
+					<label for="apellidos">Apellidos</label>		
+					<input type="text" id="apellidos" name="apellidos"required > 
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text"  id="email" name="email" pattern="[A-Z0-9+_.-]+@[A-Z0-9.-]+ "pattern="^.{4,8}$" required >	
+				</div>
+				<div>
+					<label for="usuario">Nombre de Usuario</label>
+					<input type="text" id="usuario" name="usuario" required>
+				</div>
+				<div>
+					<label for="contraseña1">Contraseña</label>
+					<input type="password" id="contraseña1" name="contraseña1" pattern="^.{4,8}$" required >
+				</div>
+				<div>
+					<label for="contraseña2">Repite la contraseña</label>
+					<input type="password" id="contraseña2" name="contraseña2"required>
+				</div>
+				<div>
+					<label for="sexo">Introduzca su sexo</label>
+					<input type="radio" name="sexo" value="M">Masculino
+					<input type="radio" name="sexo" value="F">Femenino
+					<input type="radio" name="sexo" value="O">Otro
+				</div>
+				<div>
+					<label for="buscador">Buscador favorito</label>
+					<input type="text" id="buscador" name="buscador" list="opciones">
+					<datalist id="opciones">
+						<option value="Firefox"></option>
+						<option value="Google Chrome"></option>
+						<option value="OperaGX"></option>
+					</datalist>	
+				</div>
+				<div>
+					<input type="submit" name="enviar" value="Enviar">
+				</div>
+			</fieldset> 	
+		</form> 
+	</main>
+</body> 
+</html>
