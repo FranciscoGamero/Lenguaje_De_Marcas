@@ -1,0 +1,28 @@
+
+body{
+    margin: 10px 100px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+fieldset{
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+fieldset:nth-child(1),fieldset:nth-child(2){
+    width: 40%;
+}
+div label{
+    margin-bottom: 10px;
+}
+div input{
+    display: block;
+}
+.titulo{
+    font-weight: bolder;
+}
+.requerido{
+    color: red;
+}

@@ -36,23 +36,24 @@
 					<label for="contraseña2">Repite la contraseña</label>
 					<input type="password" id="contraseña2" name="contraseña2"required>
 				</div>
-				<div>
-					<label for="sexo">Introduzca su sexo</label>
-					<input type="radio" name="sexo" value="M">Masculino
-					<input type="radio" name="sexo" value="F">Femenino
-					<input type="radio" name="sexo" value="O">Otro
+				<div id="radio">
+					<label for="genero">Genero</label>
+					<input type="radio" name="genero" value="M">Masculino<br>
+					<input type="radio" name="genero" value="f">Femenino<br>
+					<input type="radio" name="genero" value="O">Otro<br>
 				</div>
 				<div>
-					<label for="buscador">Buscador favorito</label>
-					<input type="text" id="buscador" name="buscador" list="opciones">
-					<datalist id="opciones">
-						<option value="Firefox"></option>
-						<option value="Google Chrome"></option>
-						<option value="OperaGX"></option>
-					</datalist>	
+					<label for="fnac">Fecha de nacimiento:</label>
+					<input type="date" min="1900-01-01" max="9999-12-31" required>
 				</div>
 				<div>
-					<input type="submit" name="enviar" value="Enviar">
+					<input type="submit" name="enviar" value="Enviar" >
+				</div>
+				<div id="seleccionar">
+					<input type="checkbox" name="leer" id="leer" value="lee"><label for="seleccionar">Leer</label>
+					<input type="checkbox" name="jugar" id="juga" value="lee"><label for="seleccionar">Leer</label>
+					<input type="checkbox" name="leer" id="leer" value="lee"><label for="seleccionar">Leer</label>
+					<input type="checkbox" name="leer" id="leer" value="lee"><label for="seleccionar">Leer</label>
 				</div>
 			</fieldset> 	
 		</form> 

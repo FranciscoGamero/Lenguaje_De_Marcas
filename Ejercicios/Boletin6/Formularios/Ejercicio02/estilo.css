@@ -15,6 +15,17 @@ input{
     display: block;
     width: 66%;
 }
+#radio input{
+    display: inline;
+    width: 10%;
+}
+#seleccionar{
+    display: inline;
+
+}
+#seleccionar input, #seleccionar label{
+    width: 50%;
+}
 input:focus{
     color: #F7ECE1;
     background-color: #CACC90;
