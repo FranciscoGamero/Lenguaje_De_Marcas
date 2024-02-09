@@ -7,6 +7,9 @@ div{
     margin-top: 4%;
     margin-bottom: 4%;
 }
+div:last-child{
+    width: 25%;
+}
 label{
     display: block;
     width: 33%;
@@ -20,10 +23,16 @@ input{
     width: 10%;
 }
 #seleccionar{
-    display: inline;
-
+    display: flex;
 }
-#seleccionar input, #seleccionar label{
+#seleccionar input{
+    display: inline;
+    width: 10%;
+}
+#seleccionar label{
+    display: inline;
+}
+#seleccionar div{
     width: 50%;
 }
 input:focus{

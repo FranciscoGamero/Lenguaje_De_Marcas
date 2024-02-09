@@ -4,25 +4,45 @@ body{
 }
 form{
     width: 100%;
+}
+#caja{
+    font-size: 20px;
+    border: solid 2.5px grey;
     display: flex;
     flex-wrap: wrap;
 }
+#caja fieldset{
+    width: 41%;
+}
 fieldset{
+    border: none;
     margin-right: 100px;
     margin-bottom: 50px;
 }
-fieldset:nth-child(1),fieldset:nth-child(2){
-    width: 40%;
-}
-div label{
-    margin-bottom: 10px;
-}
 div input{
     display: block;
+    margin-bottom: 10px;
 }
 .titulo{
     font-weight: bolder;
+    font-size: 25px;
 }
 .requerido{
     color: red;
+}
+#caja input{
+    width: 75%;
+    height: 30px;
+}
+#caja #nombre{
+    width: 50%;
+}
+#caja #codigopostal{
+    width: 20%;
+}
+#caja #municipio{
+    width: 45%;
+}
+#caja fieldset div label{
+    padding-bottom: 10px;
 }
