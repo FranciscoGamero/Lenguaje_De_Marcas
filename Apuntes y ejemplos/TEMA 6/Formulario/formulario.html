@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    form{
+        background-color: chocolate;
+        border: solid 1.5px darkred;
+        padding: 2px;
+        width: 50%;
+    }
+    label{
+        display: block;
+        width: 33%;
+    }
+    input{
+        display: block;
+        width: 66%;
+    }
+    .filaFormulario{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    input:focus{ /*Selector especial de los inputs*/
+        background-color: lightpink;
+        color: darkred;
+        border: solid 3px darkred;
+        outline: none; /*Para quitarle el focus*/
+    }
+</style>
+<body>
+    <h1>Formulario de registro</h1>
+    <form name="registro" method="" action="" autocomplete novalidate enctype="multipart/form-data"> <!-- Las 3 últimas son opcionales-->
+        <!--Debe tener estas tres cosas, se puede poner un id y que sea igual que el name, el method y action vacio ahora mismo porque no vamos a enviar nada-->
+        <div class="filaFormulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required readonly value="Rafael" autocomplete=""><br/> <!-- Los 3 campos son obligatorios-->    
+        </div>
+        <div class="filaFormulario">
+            <label for="apellido1">Primer apellido</label>
+            <input type="text" name="apellido1" id="apellido1"autofocus required placeholder="Su primer apellido aquí" autocomplete=""><!-- Solo puede haber un autofocus por página-->
+        </div>
+        <div class="filaFormulario">
+            <input type="text" name="apellido2" id="apellido2" required placeholder="Su segundo apellido aquí" autocomplete="">    
+        </div>
+    </form>
+</body>
+</html>

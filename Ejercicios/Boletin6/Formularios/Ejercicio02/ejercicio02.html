@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ejercicio2</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+	<main>
+		<h2>Formulario de Registro</h2>
+		<form method="post" action="#">
+			<fieldset>
+				<div>
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" name="nombre" required>
+				</div>
+				<div>
+					<label for="apellidos">Apellidos</label>
+					<input type="text" id="apellidos" name="apellidos" required>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" pattern="[A-Z0-9+_.-]+@[A-Z0-9.-]+ " required>
+				</div>
+				<div>
+					<label for="usuario">Nombre de Usuario</label>
+					<input type="text" id="usuario" name="usuario" required>
+				</div>
+				<div>
+					<label for="contraseña1">Contraseña</label>
+					<input type="password" id="contraseña1" name="contraseña1" pattern="^.{4,8}$" required>
+				</div>
+				<div>
+					<label for="contraseña2">Repite la contraseña</label>
+					<input type="password" id="contraseña2" name="contraseña2" required>
+				</div>
+				<div id="radio">
+					<label for="genero">Genero</label>
+					<input type="radio" name="genero" value="M">Masculino<br>
+					<input type="radio" name="genero" value="f">Femenino<br>
+					<input type="radio" name="genero" value="O">Otro<br>
+				</div>
+				<div>
+					<label for="fnac">Fecha de nacimiento:</label>
+					<input type="date" min="1900-01-01" max="9999-12-31" required>
+				</div>
+				<div id="seleccionar">
+					<div>
+						<input type="checkbox" name="leer" id="leer" value="lee"><label for="leer">Leer</label><br>
+						<input type="checkbox" name="escribir" id="escribir" value="esc"><label
+							for="escribir">Escribir</label><br>
+						<input type="checkbox" name="musica" id="musica" value="mus"><label for="musica">Escuchar
+							Musica</label><br>
+						<input type="checkbox" name="pelicula" id="pelicula" value="peli"><label for="pelicula">Ver
+							peliculas</label><br>
+						<input type="checkbox" name="serie" id="serie" value="ser"><label for="serie">Ver
+							series</label><br>
+						<input type="checkbox" name="bailar" id="bailar" value="bai"><label
+							for="pelicula">Bailar</label><br>
+					</div>
+					<div>
+						<input type="checkbox" name="leer" id="deporte" value="dep"><label
+							for="deporte">Deporte</label><br>
+						<input type="checkbox" name="videojuegos" id="videojuegos" value="vid"><label
+							for="juga">Videojuegos</label><br>
+						<input type="checkbox" name="instrumento" id="instrumento" value="ins"><label
+							for="instrumento">Tocar un instrumento</label><br>
+						<input type="checkbox" name="pintar" id="pintar" value="pin"><label
+							for="pintar">Pintar</label><br>
+						<input type="checkbox" name="idiomas" id="idiomas" value="idi"><label
+							for="idiomas">Idiomas</label><br>
+						<input type="checkbox" name="senderismo" id="senderismo" value="sen"><label
+							for="senderismo">Senderismo</label><br>
+					</div>
+				</div>
+				<div>
+					<input type="submit" name="enviar" value="Enviar">
+				</div>
+			</fieldset>
+		</form>
+	</main>
+</body>
+
+</html>

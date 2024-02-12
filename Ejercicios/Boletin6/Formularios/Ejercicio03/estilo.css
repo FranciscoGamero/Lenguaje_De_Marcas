@@ -1,0 +1,48 @@
+
+body{
+    margin: 10px 100px;
+}
+form{
+    width: 100%;
+}
+#caja{
+    font-size: 20px;
+    border: solid 2.5px grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+#caja fieldset{
+    width: 41%;
+}
+fieldset{
+    border: none;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+label{
+    display: block;
+}
+input{
+    margin-top: 25px;
+    height: 25px;
+    width: 100%;
+}
+#nombre{
+    width: 50%;
+}
+.ayuda{
+    font-size: 0px;
+}
+.titulo{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.requerido{
+    color: red;
+}
+.lugar{
+    display: flex;
+}
+.lugar input{
+    width: 80%;
+}
