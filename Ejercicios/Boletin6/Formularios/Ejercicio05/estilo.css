@@ -2,7 +2,7 @@ body{
     margin: 10px 100px;
 }
 form{
-    width: 100%;
+    width: 50%;
 }
 #caja{
     font-size: 20px;
@@ -49,16 +49,9 @@ input{
     width: 80%;
 }
 .division .telefono{
-    margin-right: -40px;
+    flex: 1 1 auto;
 }
 #alta{
     margin-left: 80%;
     width: 125px;
-}
-fieldset:hover{
-    background-color:#FF9;
-}
-input:focus{
-    border: solid 3.5px #E6B700;
-    outline: none;
 }
