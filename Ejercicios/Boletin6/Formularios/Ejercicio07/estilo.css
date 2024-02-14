@@ -1,14 +1,23 @@
-h1{
-    text-align: center;
-}
+
 body{
+    min-width: 320px;
+    min-height: 200px;
+    max-width: 1920px;
+    max-height: 1080px;
+    padding-top: 10%;
     width: 50%;
     margin: 0 auto;
+    background-color: #5EB1BF;
 }
 fieldset{
-    background-color: #8BA6A9;
+    background-color: #EF7B45;
     width: 80%;
     border: solid 2px;
+}
+legend{
+    background-color: #EF7B45;
+    border: solid 2px black;
+    font-weight: bolder;
 }
 div{
     margin-top: 4%;
@@ -16,35 +25,25 @@ div{
 }
 div:last-child{
     width: 25%;
+    margin-left: 60%;
 }
 label{
+    font-size: 20pt;
+    margin-left: 15%;
     display: block;
     width: 33%;
 }
+label:first-of-type{
+    padding-top: 20px;
+}
 input{
+    margin-left: 15%;
     display: block;
     width: 66%;
 }
-#radio input{
-    display: inline;
-    width: 10%;
-}
-#seleccionar{
-    display: flex;
-}
-#seleccionar input{
-    display: inline;
-    width: 10%;
-}
-#seleccionar label{
-    display: inline;
-}
-#seleccionar div{
-    width: 50%;
-}
 input:focus{
-    color: #F7ECE1;
-    background-color: #CACC90;
-    border: solid 3px #75704E;
+    color: black;
+    background-color: #CDEDF6;
+    border: solid 3px #042A2B;
     outline: none;
 }

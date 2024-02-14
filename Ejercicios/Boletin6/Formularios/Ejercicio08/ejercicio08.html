@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Ejercicio 8 - Formulario de Hotel</title>
+		<meta charset="utf-8" />
+		<title>Ejercicio2</title>
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<main>
+			<h1>Registro de hotel</h1>
+			<form method="post" action="#">
+				<fieldset>
+					<label for="email">Email</label>
+					<input type="email"  id="email" name="email">	
+					<label for="huespedes">Número de huespedes</label>
+					<input type="number" name="huepedes" id="huepedes">
+					<label for="habitaciones">Tipo de Habitaciones</label>
+					<input type="text" id="habitaciones" name="habitaciones" list="habitaciones">
+					<datalist id="habitaciones">
+						<option value="Suite"></option>
+						<option value="Doble"></option>
+						<option value="Normal"></option>
+					</datalist>
+					<label for="entrada">Fecha de entrada</label>
+					<input type="date" name="entrada" id="entrada" min="2000-01-01" max="2100-12-31">
+					<label for="salida">Fecha de salida</label>
+					<input type="date" name="entrada" id="entrada" min="2000-01-01" max="2100-12-31">
+					<div>
+						<input type="submit" name="enviar" value="Enviar">
+					</div>
+				</fieldset>
+			</form>
+		</main>
+	</body>
+</html>
