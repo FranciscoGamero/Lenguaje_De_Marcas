@@ -34,6 +34,9 @@
         border: solid 3px darkred;
         outline: none; /*Para quitarle el focus*/
     }
+    input:checked{
+        background-color: red;
+    }
 </style>
 <body>
     <h1>Formulario de registro</h1>
@@ -49,6 +52,10 @@
         </div>
         <div class="filaFormulario">
             <input type="text" name="apellido2" id="apellido2" required placeholder="Su segundo apellido aquí" autocomplete="">    
+        </div>
+        <div class="filaFormulario">
+            <input type="checkbox" id="aficiones1" name="aficiones1"><label for="aficiones1">Correr</label><br>
+            <input type="checkbox" id="aficiones2" name="aficiones2"><label for="aficiones2">Leer</label><br>
         </div>
     </form>
 </body>
