@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hdad. </title>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		body{
+			background-color: #e520bb;
+		}
+		h1{
+			font-family: Satisfy;
+			font-weight: lighter;
+			color: white;
+			margin: 0 auto;
+			text-align: center;
+			width: 75%;
+		}
+		form{
+			width: 75%;
+			margin: 0 auto;
+			border: 4px solid yellow;
+			background-color: purple;
+			color: purple;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		fieldset{
+			background-color: yellow;
+			border: none;
+			margin: 10px;
+		}
+		input:focus{
+			background-color: purple;
+			color: white;
+			outline: none;
+			border: 2px solid rgb(255, 255, 255);
+		}
+		form>fieldset>div{
+			margin-bottom: 10px;
+		}
+		form>div{
+			display: flex;
+		}
+		form div fieldset{
+			flex: 1 1 50%;
+		}
+		legend{
+			background-color: yellow;
+		}
+		input[type="checkbox"]:checked+span{
+			font-weight: bold;
+			background-color: #e520bb;
+			color: white;
+		}
+		p{
+			margin: 20px;
+		}
+		form>fieldset>div:nth-child(4)>div{
+			display: flex;
+		}
+		form>fieldset>div:nth-child(4)>div div{
+			flex: 1 1 25%;
+		}
+		table{
+            width: 60%;
+            border: 4px solid yellow;
+			border-collapse: collapse;
+			margin: 0 auto;
+			background-color: purple;
+        }
+		td, th{
+			border: 1px solid yellow;
+			color: white;
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		td{
+			font-size: 0.8em;
+		}
+		thead td, thead th, tbody td, tbody th{
+			text-align: center;
+			vertical-align: middle;
+		}
+		caption{
+			font-family: Satisfy;
+			font-weight: lighter;
+			font-size: 1.4em;
+			color: yellow;
+		}
+		tfoot tr td{
+			justify-content: left;
+			font-size: 0.6em;
+		}
+		table thead th:first-of-type{
+			width: 40%;
+		}
+		table thead th:last-of-type{
+			width: 45%;
+		}
+		/*	COLORES: 
+				- Fondo general:  #e520bb;				
+				- Amarillos:  yellow;
+				- Blancos:  white;
+				- Morados: purple;
+
+			FUENTE:  Satisfy (está ya incluida a través de la etiqueta link);
+		*/
+	</style>
+</head>
+<body>
+	<h1>Ilustre y Poco Antigua Hermandad del Santísimo Sacramento y Cofradía de Nazarenos de Nuestro Padre Señor del Soberano Poder del Wifi y María Santísima de la Cobertura Imposible </h1>
+	
+	<form name="papeleta" action="" method="POST" autocomplete="on" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Elija su papeleta</legend>
+			<div>
+				<label for="paso">¿En qué paso desea salir?</label>
+				<select name="paso" id="paso" required>
+					<option value="cristo">Cristo</option>
+					<option value="Virgen">Virgen</option>
+				</select>
+			</div>
+			<div>
+				<label for="cirio">¿De qué tamaño desea el cirio?</label>
+				<input type="radio" name="cirio" value="peque" required>Pequeño
+				<input type="radio" name="cirio" value="normal" required>Normal
+				<input type="radio" name="cirio" value="cruz" required>Cruz
+			</div>
+			<div>
+				<label for="insignia">¿Desea solicitar portar alguna insignia?</label><br><br>
+				<div>
+					<div>
+						<input type="checkbox"><span>Cruz de Guía</span><br>
+						<input type="checkbox"><span>Senatus</span><br>
+						<input type="checkbox"><span>Bandera Morada</span><br>
+					</div>
+					<div>
+						<input type="checkbox"><span>Reliquia Lignum Crucis</span><br>
+						<input type="checkbox"><span>Banderín Juventud</span><br>
+						<input type="checkbox"><span>Estandarte Sacramental</span><br>
+					</div>
+					<div>
+						<input type="checkbox"><span>Cruz Alzada</span><br>
+						<input type="checkbox"><span>Simpecado</span><br>
+						<input type="checkbox"><span>Bandera Blanca</span><br>
+					</div>
+					<div>
+						<input type="checkbox"><span>Guión de Caridad</span><br>
+						<input type="checkbox"><span>Libro de Reglas</span><br>
+						<input type="checkbox"><span>Estandarte</span><br>
+					</div>
+				</div>
+			</div>
+			<div>
+				<label for="peticion">¿Desea indicarnos alguna petición especial?</label><br>
+				<textarea name="peticion" id="peticion" cols="36" rows="6"></textarea>
+			</div>
+		
+		</fieldset>
+		<div>
+			<fieldset>
+				<legend>Indique sus datos personales</legend>
+				<label for="nombre">Nombre y apellidos</label>
+				<input type="text" id="nombre" name="nombre" required><br><br>
+				<label for="direccion">Dirección de envío</label>
+				<input type="text" name="direccion" id="direccion" maxlength="50" size="35" required placeholder="c/Cofrades del Soberano, 4"><br><br>
+				<label for="codpostal">Código Postal</label>
+				<input type="text" name="codpostal" id="codpostal" maxlength="5" size="5" pattern="[0-9]{5}" required placeholder="41024"><br><br>
+				<label for="tlf">Teléfono de contacto</label>
+				<input type="text" name="tlf" id="tlf" maxlength="9" size="9" pattern="[0-9]{9}" required placeholder="954123123" required><br>
+			</fieldset>
+			<fieldset class="pago">
+				<legend>Indique sus datos de pago</legend>
+				<label for="tarjeta">Número de tarjeta</label>
+				<input type="text" name="tarjeta" id="tarjeta" maxlength="16" size="16" pattern="[0-9]{16}"required placeholder="16 cifras sin espacios"><br><br>
+				<label for="fcad">Fecha de Caducidad</label>
+				<input type="date" name="fcad" id="fcad" required><br><br>
+				<label for="ccv">Código de Seguridad (CCV)</label>
+				<input type="password" name="ccv" id="ccv" maxlength="3" size="3" pattern="[0-9]{3}" required placeholder="123"><br><br>
+			</fieldset>
+		</div>
+		<p>
+			<input type="submit" value="Solicitar Papeleta">
+			<input type="reset" value="Borrar datos">
+		</p>
+	</form>
+
+	<hr />
+
+	<table summary="Tabla de recogida de Limosnas 2023">
+		<caption>Limosnas 2023</caption>
+		<thead>
+			<tr>
+				<th>Papeleta</th>
+				<th>Limosna</th>
+				<th>Observaciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cirio, cruz</td>
+				<td>16€</td>
+				<td>Pequeño: 12€</td>
+			</tr>
+			<tr>
+				<td>Insignias Cristo</td>
+				<td>20€</td>
+				<td> - </td>
+			</tr>
+			<tr>
+				<td>Insignias Virgen</td>
+				<td>22€</td>
+				<td> - </td>
+			</tr>
+			<tr>
+				<td rowspan="3">Entrega</td>
+				<td colspan="2">Recogida en casa hermandad: Gratis.</td>
+			</tr>
+			<tr>
+				<td colspan="2">Envío electrónico: 1€</td>			
+			</tr>
+			<tr>
+				<td colspan="2">Envío postal: 2€</td>			
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">NOTA: Todas las insignias se asignarán por orden de antigüedad</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

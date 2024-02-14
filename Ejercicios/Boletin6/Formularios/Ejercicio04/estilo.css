@@ -1,64 +1,101 @@
-body{
+body {
     margin: 10px 100px;
 }
-form{
+
+form {
     width: 100%;
 }
-#caja{
-    font-size: 20px;
-    border: solid 2.5px grey;
+
+#borde {
     display: flex;
+    border: solid 2.5px grey;
     flex-wrap: wrap;
 }
-#caja fieldset{
-    width: 41%;
+
+#borde fieldset {
+    width: 48.352%;
 }
-fieldset{
-    border: none;
-    margin-right: 100px;
-    margin-bottom: 50px;
+
+label {
+    margin-bottom: 15px;
 }
-label{
-    display: block;
-}
-input{
-    margin-top: 25px;
-    height: 25px;
+
+input {
     width: 100%;
+    height: 25px;
 }
-#nombre{
-    width: 50%;
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
-.ayuda{
-    font-size: 0px;
+
+.campo {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 15px;
 }
-.titulo{
+
+.titulo {
+    width: 25%;
     font-weight: bolder;
     font-size: 20px;
+    margin-right: 10px;
+    align-self: flex-start;
 }
-.requerido{
+
+.ayuda {
+    width: 25%;
+    color: transparent;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+fieldset {
+    border: none;
+}
+
+#nombre {
+    width: 50%;
+}
+
+.requerido {
     color: red;
 }
-.division{
+
+.division {
     display: flex;
 }
-.division div{
-    width: 45%;
+
+.division div {
+    margin-right: 30px;
+    margin-top: 10px;
 }
-.division input{
+
+.division input {
     width: 80%;
 }
-.division .telefono{
-    margin-right: -40px;
-}
-#alta{
+
+#alta {
     margin-left: 80%;
     width: 125px;
 }
-fieldset:hover{
-    background-color:#FF9;
+
+.division:last-child div:last-child {
+    margin-left: 12%;
 }
-input:focus{
+
+fieldset:hover {
+    background-color: #FF9;
+}
+
+#boton:hover {
+    background-color: white;
+}
+
+input:focus {
     border: solid 3.5px #E6B700;
     outline: none;
 }

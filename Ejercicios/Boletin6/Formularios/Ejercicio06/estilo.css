@@ -1,62 +1,120 @@
-
-body{
+body {
     margin: 10px 100px;
 }
-form{
-    width: 80%;
-}
-label{
-    display: block;
-}
-#todo{
-    font-size: 20px;
-    border: solid 2.5px grey;
-    display: flex;
-    flex-wrap: wrap;
-}
-#todo fieldset{
-    width: 85%;
-}
-fieldset{
-    border: none;
-    display: flex;
-}
-fieldset div{
-    flex: 1 1 auto;
-}
-input{
-    margin-top: 25px;
-    height: 25px;
-    width: 80%;
-}
-#nombre{
+
+form {
     width: 50%;
 }
-#nombre label{
-    display: block;
+
+#borde {
+    border: 1.5px solid black;
 }
-.titulo{
+
+label {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 70%;
+    height: 25px;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.campo {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.titulo {
+    width: 25%;
     font-weight: bolder;
     font-size: 20px;
-    width: auto;
-    padding-top: 30px;
+    margin-right: 10px;
+    align-self: flex-start;
 }
-.requerido{
+
+.ayuda {
+    width: 25%;
+    color: transparent;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+fieldset {
+    border: none;
+}
+
+#nombre {
+    width: 50%;
+}
+
+.requerido {
     color: red;
 }
-.division{
+
+.division {
     display: flex;
 }
-.division div{
-    width: 45%;
+
+.division div {
+    margin-right: 30px;
+    margin-top: 10px;
 }
-.division input{
+
+.division input {
     width: 80%;
 }
-.division .telefono{
-    flex: 1 1 auto;
-}
-#alta{
+
+#alta {
     margin-left: 80%;
     width: 125px;
+}
+
+.division:last-child div:last-child {
+    margin-left: 12%;
+}
+
+fieldset:hover {
+    background-color: #FF9;
+}
+
+#boton:hover {
+    background-color: white;
+}
+
+input:focus {
+    border: solid 3.5px #E6B700;
+    outline: none;
+}
+
+fieldset:hover {
+    background-color: #FF9;
+}
+
+fieldset .titulo {
+    width: 15%;
+}
+
+fieldset:nth-child(1) .titulo {
+    width: 25%;
+}
+
+fieldset:nth-child(4) .titulo {
+    width: 15%;
+    height: auto;
+}
+
+fieldset:nth-child(4) .campo {
+    margin-bottom: none;
+}
+
+fieldset:hover .ayuda {
+    color: inherit;
 }
