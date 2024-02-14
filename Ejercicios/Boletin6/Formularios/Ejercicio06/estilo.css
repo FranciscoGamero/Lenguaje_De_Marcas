@@ -3,7 +3,10 @@ body{
     margin: 10px 100px;
 }
 form{
-    width: 50%;
+    width: 80%;
+}
+label{
+    display: block;
 }
 #todo{
     font-size: 20px;
@@ -16,28 +19,27 @@ form{
 }
 fieldset{
     border: none;
-    margin-right: 100px;
-    margin-bottom: 50px;
+    display: flex;
 }
-label{
-    display: block;
+fieldset div{
+    flex: 1 1 auto;
 }
 input{
     margin-top: 25px;
     height: 25px;
-    width: 100%;
+    width: 80%;
 }
 #nombre{
     width: 50%;
 }
-.ayuda{
-    font-size: 0px;
+#nombre label{
+    display: block;
 }
 .titulo{
     font-weight: bolder;
     font-size: 20px;
-    position: relative;
-    top: 50px;
+    width: auto;
+    padding-top: 30px;
 }
 .requerido{
     color: red;
@@ -57,7 +59,4 @@ input{
 #alta{
     margin-left: 80%;
     width: 125px;
-}
-fieldset .caja{
-    margin-left: 30%;
 }
