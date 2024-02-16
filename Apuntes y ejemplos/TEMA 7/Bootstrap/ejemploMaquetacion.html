@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+    <body>
+        <!-- CONTAINER>ROW>COL-->
+        <div class="container-fluid">
+            <h1>Tres columnas iguales</h1>
+            <div class="row">
+                <!-- Si no pones un numero despues de un col se pone automatico-->
+                <div class="col p-3 bg-primary text-white">Hola1</div>
+                <div class="col p-3 bg-dark text-white">Hola2</div>
+                <div class="col p-3 bg-primary text-white">Hola3</div>
+            </div>
+            <div class="row">
+                <!--
+                    col- -> pantalla xs y s
+                    col -md -> pantalla m y l
+                    col -xl- -> pantalla xl, xxl y xxxl
+                    
+                    Para los cols, order y offset si no colocas las tallas se aplica a todas las pantallas por igual
+
+                -->
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-dark text-white">Hola4</div>
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-primary text-white">Hola5</div>
+                <div class="col-12 col-md-6 col-xl-3 p-3 bg-dark text-white">Hola6</div>
+            </div>
+        </div>
+    </body>
+</html>
