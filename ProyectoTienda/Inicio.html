@@ -14,212 +14,242 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
-    <body class="bg-secondary p-2">
-        <nav class="navbar navbar-expand-sm bg-primary justify-content-center">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-2" href="#Inicio"><img src="img/Logo2.png" alt="" class="img-fluid"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-pc-display"></i> Ordenador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-playstation"></i>
-                                Playstation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-xbox"></i> Xbox</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-nintendo-switch"></i>
-                                Nintendo</a>
-                        </li>
-                    </ul>
-                    <div class="mx-2">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#inicio">Iniciar
-                            Sesión</button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#registro">Registrarse</button>
-                        <button id="btnOscuro" type="button" class="btn btn-primary"><i
-                                class="bi bi-moon-fill"></i></button>
-                    </div>
-                    <div class="modal" id="inicio">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Inicio de Sesión</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <div class="mb-3 mt-3">
-                                            <label for="email" class="form-label"><span class="text-danger">*</span>
-                                                Correo:</label>
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="Introduce el correo" name="email" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="pwd" class="form-label"><span class="text-danger">*</span>
-                                                Contraseña:</label>
-                                            <input type="password" class="form-control" id="pwd"
-                                                placeholder="Introduce la contraseña" name="pswd" required>
-                                        </div>
-                                        <div class="form-check mb-3">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
-                                            </label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                                </div>
+<body class="bg-secondary p-2">
+    <nav class="navbar navbar-expand-sm bg-primary justify-content-center">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2" href="#Inicio"><img src="img/Logo2.png" alt="" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-pc-display"></i> Ordenador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-playstation"></i>
+                            Playstation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-xbox"></i> Xbox</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-4 text-bg-primary" href="#"><i class="bi bi-nintendo-switch"></i>
+                            Nintendo</a>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#inicio">Iniciar
+                        Sesión</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#registro">Registrarse</button>
+                    <button id="btnOscuro" type="button" class="btn btn-primary"><i
+                            class="bi bi-moon-fill"></i></button>
+                </div>
+                <div class="modal" id="inicio">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Inicio de Sesión</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="modal" id="registro">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Registro</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <div class="mb-3 mt-3">
-                                            <label for="nombre" class="form-label"><span class="text-danger">*</span>
-                                                Nombre</label>
-                                            <input type="text" class="form-control" name="nombre" size="40" required>
-                                        </div>
-                                        <div class="mb-3 mt-3">
+                            <div class="modal-body container-fluid">
+                                <div class="row">
+                                    <form action="#">
+                                        <div class="mb-3 mt-3 col-12">
                                             <label for="email" class="form-label"><span class="text-danger">*</span>
                                                 Correo:</label>
                                             <input type="email" class="form-control" id="email"
                                                 placeholder="Introduce el correo" name="email" required>
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-3 mt-3 col-12">
                                             <label for="pwd" class="form-label"><span class="text-danger">*</span>
                                                 Contraseña:</label>
                                             <input type="password" class="form-control" id="pwd"
                                                 placeholder="Introduce la contraseña" name="pswd" required
                                                 pattern="^[a-zA-Z]{8,15}$">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="pwd2" class="form-label"><span class="text-danger">*</span> Repite
+                                        <div class="form-check mb-3 col-12">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" name="remember">
+                                                Recuérdame
+                                            </label>
+                                        </div>
+                                        <!--Poner como un <a> que envie a otro lado-->
+                                    </form>
+                                    <div class="mb-3 mt-2 col-12">
+                                        <a href="Inicio.html" class="btn btn-primary">Enviar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer container justify-content-end">
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <a href="Inicio.html" class="btn btn-danger">Cerrar</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal" id="registro">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Registro</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body container-fluid">
+                                <div class="row">
+                                    <form action="#">
+                                        <div class="mb-3 mt-3 col-12">
+                                            <label for="nombre" class="form-label"><span class="text-danger">*</span>
+                                                Nombre</label>
+                                            <input type="text" class="form-control" name="nombre" size="40" required>
+                                        </div>
+                                        <div class="mb-3 mt-3 col-12">
+                                            <label for="email" class="form-label"><span class="text-danger">*</span>
+                                                Correo:</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Introduce el correo" name="email" required>
+                                        </div>
+                                        <div class="mb-3 mt-3 col-12">
+                                            <label for="pwd" class="form-label"><span class="text-danger">*</span>
+                                                Contraseña:</label>
+                                            <input type="password" class="form-control" id="pwd"
+                                                placeholder="Introduce la contraseña" name="pswd" required
+                                                pattern="^[a-zA-Z]{8,15}$">
+                                        </div>
+                                        <div class="mb-3 mt-3 col-12">
+                                            <label for="pwd2" class="form-label"><span class="text-danger">*</span>
+                                                Repite
                                                 la contraseña</label>
                                             <input type="password" class="form-control" id="pwd2"
                                                 placeholder="Introduce la contraseña" name="pswd" required
                                                 pattern="^[a-zA-Z]{8,15}$">
                                         </div>
-                                        <div class="form-check mb-3">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" name="remember"> Recuérdame
-                                            </label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
-                                        <!--Poner como un <a> que envie a otro lado-->
                                     </form>
+                                    <div class="mb-3 mt-2 col-12">
+                                        <a href="Inicio.html" class="btn btn-primary">Enviar</a>
+                                    </div>
                                 </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                            <div class="modal-footer container justify-content-end">
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <a href="Inicio.html" class="btn btn-danger">Cerrar</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <main>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <h1 class="mt-2 py-2 px-5">Más vendidos</h1>
-                    <div class="col-12 col-lg-3 mx-2 card" style="width:400px">
-                        <img class="card-img-top mt-2" src="img/Juegos/Helldivers.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Helldivers 2</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
-                        <img class="card-img-top mt-2" src="img/Juegos/ReadyOrNot.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Ready or Not</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
-                        <img class="card-img-top mt-2" src="img/Juegos/Cyberpunk.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Cyberpunk 2077: Ultimate Edition</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
-                        <img class="card-img-top mt-2" src="img/Juegos/EldenRing.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Elden Ring</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
-                        <img class="card-img-top mt-2" src="img/Juegos/Minecraft.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Minecraft</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
-                        <img class="card-img-top mt-2" src="img/Juegos/Fifa.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Minecraft</h4>
-                            <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="mt-2 py-2 px-5 fw-bolder">Más vendidos</h1>
+                <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
+                    <img class="card-img-top mt-2" src="img/Juegos/Helldivers.png" alt="Card image">
+                    <div class="card-body">
+                        <h2 class="card-title">Helldivers 2</h2>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-warning fs-4">40€<span class="text-danger">&nbsp;- 25%</span></li>
+                            <li class="list-inline-item hell mx-4 fs-1 text-success fw-bold">29.99€</li>
+                          </ul>
+                        <a href="#" class="btn btn-primary">Ver descripción</a>
                     </div>
                 </div>
-        </main>
-        <footer class="mt-3">
-            <div class="container-fluid text-bg-primary">
-                <div class="row mx-3">
-                    <div class="col-4">
-                        <h4>Términos y Condiciones</h4>
-                        <h4>Contacta con nosotros</h4>
-                        <h4>Conócenos</h4>
+                <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
+                    <img class="card-img-top mt-2" src="img/Juegos/ReadyOrNot.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Ready or Not</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-warning fs-4">50<span class="text-danger">&nbsp;- 41%</span></li>
+                            <li class="list-inline-item hell mx-4 fs-1 text-success fw-bold">29.28€</li>
+                          </ul>
+                        <a href="#" class="btn btn-primary">Ver descripción</a>
                     </div>
-                    <div class="col-4">
-                        <h4>Términos y Condiciones</h4>
-                        <h4>Contacta con nosotros</h4>
-                        <h4>Conócenos</h4>
+                </div>
+                <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
+                    <img class="card-img-top mt-2" src="img/Juegos/Cyberpunk.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Cyberpunk 2077: Ultimate Edition</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-warning fs-4">90€<span class="text-danger">&nbsp;- 61%</span></li>
+                            <li class="list-inline-item hell mx-4 fs-1 text-success fw-bold">35.41€</li>
+                          </ul>
+                        <a href="#" class="btn btn-primary">Ver descripción</a>
                     </div>
-                    <div class="col-4">
-                        <h4>Términos y Condiciones</h4>
-                        <h4>Contacta con nosotros</h4>
-                        <h4>Conócenos</h4>
+                </div>
+
+                <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
+                    <img class="card-img-top mt-2" src="img/Juegos/EldenRing.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Elden Ring</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-warning fs-4">60€<span class="text-danger">&nbsp;- 29%</span></li>
+                            <li class="list-inline-item hell mx-4 fs-1 text-success fw-bold">42.72€</li>
+                          </ul>
+                        <a href="#" class="btn btn-primary">Ver descripción</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
+                    <img class="card-img-top mt-2" src="img/Juegos/Minecraft.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Minecraft</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-warning fs-4">30€<span class="text-danger">&nbsp;- 37%</span></li>
+                            <li class="list-inline-item hell mx-4 fs-1 text-success fw-bold">19.02€</li>
+                          </ul>
+                        <a href="#" class="btn btn-primary">Ver descripción</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mx-2 mt-2 card" style="width:400px">
+                    <img class="card-img-top mt-2" src="img/Juegos/Fifa.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">EA Sports FC 24</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-warning fs-4">70€<span class="text-danger">&nbsp;- 65%</span></li>
+                            <li class="list-inline-item hell mx-4 fs-1 text-success fw-bold">24.64€</li>
+                          </ul>
+                        <a href="#" class="btn btn-primary">Ver descripción</a>
                     </div>
                 </div>
             </div>
-        </footer>
+    </main>
+    <footer class="mt-3">
+        <div class="container-fluid text-bg-primary">
+            <div class="row mx-3">
+                <div class="col-4">
+                    <h4>Términos y Condiciones</h4>
+                    <h4>Contacta con nosotros</h4>
+                    <h4>Conócenos</h4>
+                </div>
+                <div class="col-4">
+                    <h4>Términos y Condiciones</h4>
+                    <h4>Contacta con nosotros</h4>
+                    <h4>Conócenos</h4>
+                </div>
+                <div class="col-4">
+                    <h4>Términos y Condiciones</h4>
+                    <h4>Contacta con nosotros</h4>
+                    <h4>Conócenos</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <script>
-            document.querySelector('#btnOscuro').addEventListener('click', cambiarModo);
-            let sigTema = 'dark'
-            function cambiarModo() {
-                document.documentElement.setAttribute('data-bs-theme', sigTema);
-                sigTema = sigTema == 'dark' ? 'light' : 'dark';
-            }
-        </script>
-    </body>
+    <script>
+        document.querySelector('#btnOscuro').addEventListener('click', cambiarModo);
+        let sigTema = 'dark'
+        function cambiarModo() {
+            document.documentElement.setAttribute('data-bs-theme', sigTema);
+            sigTema = sigTema == 'dark' ? 'light' : 'dark';
+        }
+    </script>
+</body>
 
 </html>
