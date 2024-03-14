@@ -1,13 +1,6 @@
-let valores = [true, 5, false, "o", "adios", 2];
+let valores = [true, 5, false, "o".length, "adios".length--, 2];
 
-if(valores[3] > valores[4]){
-    alert(valores[3]+" es mayor")
-} else if (valores[4] > valores[3]){
-    alert(valores[4]+ "es mayor");
-} else {
-    alert("Son iguales");
-}
-
+let mayor = (valores[3]>valores[4])?valores[3]:valores[4];
 if(valores[0]){
     alert(valores[0]);
 }
