@@ -18,23 +18,21 @@ function camelize(str){
     //Primero quitamos los guiones y separamos por palabras
     let palabrasSueltas = str.split('-')
     //Poner la primera letra a mayuscula
-    for (let i=1; i<palabrasSueltas.lenght; i++) {
+    for (let i=1; i<palabrasSueltas.length; i++) {
        let palabraMayuscula=palabrasSueltas[i].charAt(0).toUpperCase();
         palabrasSueltas[i]=palabraMayuscula+palabrasSueltas[i].substring(1);
     }
     //Concatenar las palabras
     return palabrasSueltas.join('');
 }
-
 /*3. Un método sortear(arr) que recibe un array y muestra un elemento del array aleatorio*/
 function sortear(arr){
     let desde = 0;
-    let hasta = arr.lenght;
+    let hasta = arr.length;
     let numAleatorio;
     numAleatorio= Math.floor(desde+Math.random()*hasta);
     return arr[numAleatorio];
 }
-
 /*4. hacer una funcion principal que llame el método para el ejercicio1, que pase todos los textos a camelCase y despues elija uno al azar */
 function principal(){
     let propiedadesCSS = pedirNombres();

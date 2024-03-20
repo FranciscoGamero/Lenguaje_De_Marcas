@@ -1,9 +1,12 @@
-let numeros = [];
-
-for (let i = 0; i < 10; i++) {
-    numeros.push(Math.round(Math.random() * 100));
+let cantNumeros = prompt('¿Cuantos números desea que tenga su array?')
+let array = [cantNumeros];
+for (let i = 0; i < cantNumeros; i++) {
+    array.push(Math.floor(Math.random() * 100));
 }
-    numeros.sort(function(a, b) {
-        return b - a;
-    });
-alert(numeros);
+ordenarArray(array);
+function ordenarArray(arr){
+    array.sort(function(a, b) {
+            return b - a;
+        });
+    alert(array);
+}

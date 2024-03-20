@@ -1,15 +1,13 @@
-let frase = prompt("Inserte la frase: ");
 let resultado = true;
-    frase = frase.toLowerCase().replace(/\s/g, '');
+let frase = prompt("Inserte la frase: ");
+comprobarPalindromo(frase);
 
-    for (let i = 0; i < frase.length / 2; i++) {
-        if (frase[i] !== frase[frase.length - 1 - i]) {
-            resultado = false;
-        }
-    }
-
-    if(resultado){
+function comprobarPalindromo(str){
+    str = str.split(" ").join("").toLowerCase();
+    let strInverso = str.split("").reverse().join("");
+    if(str==strInverso){
         alert("La palabra es palindroma");
     } else {
         alert("La palabra no es palindroma");
     }
+}
