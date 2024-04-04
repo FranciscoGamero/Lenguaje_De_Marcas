@@ -61,4 +61,26 @@ function botonPulsado4(){
     //Movemos el segundo hijo al final de la lista
     lista.append(segundoLi);
 }
+//Para diferenciar clicks
+let boton5 = document.getElementById('boton5');
+boton5.addEventListener('click',botonPulsado5);
+//Para diferenciar clicks
+function botonPulsado5(){
+    boton5.classList.toggle('btn-danger');
+    boton5.className += ' text-warning';
+    
+    let zonaMensajes = document.querySelector('.zonaMensajes');
+    zonaMensajes.innerText = 'el boton es del tipo ' + boton5.type;
+
+    let enlace = document.createElement('a');
+    enlace.setAttribute('href', '#inicio');
+    document.querySelector('body').id='inicio';
+    enlace.innerText='Ir al inico'
+
+    zonaMensajes.append(enlace);
+
+    
+    
+}
+
 
