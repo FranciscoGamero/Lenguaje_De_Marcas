@@ -15,16 +15,19 @@
 		let elementos = document.querySelectorAll('a');
 		alert(elementos.length)
 		// Direccion del penultimo enlace
-		alert(elementos[elementos.length-1])
-		// Numero de enlaces que apuntan a http://prueba
-		let contador;
-		for (let i = 0; i < elementos.length; index++) {
-			if(elementos[i].innerText=='http://prueba'){
+		alert(elementos[elementos.length-2])
+		// Numero de enlaces que apuntan a http://prueba SON 3
+		let contador=0;
+		for (let i = 0; i < elementos.length; i++) {
+			if(elementos[i].getAttribute('href')=="http://prueba/"){
 				contador++;
 			}
 		}
-		alert(contador);
+		//alert(contador);
 		// Numero de enlaces del tercer párrafo
+		let elementosTercerParrafo = document.querySelectorAll('p:nth-child(3)');
+		let elementosTercerParrafo2 = elementosTercerParrafo.querySelectorAll('a');
+		alert(elementosTercerParrafo2.length)
 	}
 	</script>
 </head>
