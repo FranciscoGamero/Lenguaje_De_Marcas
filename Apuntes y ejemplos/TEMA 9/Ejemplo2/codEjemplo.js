@@ -1,4 +1,4 @@
-let elDiv = document.querySelectorAll('div');
+let elDiv = document.querySelector('div');
 elDiv.addEventListener('mouseOver',ratonSobre);
 
 function ratonSobre(elEvento){
