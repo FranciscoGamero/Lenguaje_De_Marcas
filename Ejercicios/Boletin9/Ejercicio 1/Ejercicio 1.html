@@ -15,19 +15,24 @@
 		let elementos = document.querySelectorAll('a');
 		alert(elementos.length)
 		// Direccion del penultimo enlace
-		alert(elementos[elementos.length-2])
+		alert(elementos[elementos.length-2].href)
 		// Numero de enlaces que apuntan a http://prueba SON 3
 		let contador=0;
-		for (let i = 0; i < elementos.length; i++) {
+		/*for (let i = 0; i < elementos.length; i++) {
 			if(elementos[i].getAttribute('href')=="http://prueba/"){
 				contador++;
 			}
 		}
+		*/
+		for(let a of elementos){
+			if(a.href === 'http://prueba/'){
+				contador++;
+			}
+		} alert(contador)
 		//alert(contador);
 		// Numero de enlaces del tercer párrafo
-		let elementosTercerParrafo = document.querySelectorAll('p:nth-child(3)');
-		let elementosTercerParrafo2 = elementosTercerParrafo.querySelectorAll('a');
-		alert(elementosTercerParrafo2.length)
+		let elementosTercerParrafo = document.querySelectorAll('p:nth-child(3) a');
+		alert(elementosTercerParrafo.length)
 	}
 	</script>
 </head>
