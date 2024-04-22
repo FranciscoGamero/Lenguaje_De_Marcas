@@ -20,6 +20,7 @@ function esconderContrasenia(elEvento){
 }
 
 function validarFormulario(elEvento){
+    elEvento.preventDefault();
     let resultado = true;
     if(formulario.elements.nombre.value==''){
         resultado = false;
