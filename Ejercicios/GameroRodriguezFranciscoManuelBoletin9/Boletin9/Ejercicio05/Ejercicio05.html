@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejercicio 5</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		body {
+			font-family: arial, helvetica;
+		}
+
+		#info {
+			width: 160px;
+			border: thin solid silver;
+			padding: .5em;
+			position: fixed;
+		}
+
+		#info h1 {
+			margin: 0;
+		}
+	</style>
+	<script>
+
+		function muestraInformacion(mensaje) {
+			let info = document.getElementById("info");
+			info.innerHTML = '<h1>' + mensaje[0] + '</h1>';
+			for (let elemento of mensaje) {
+				info.innerHTML += '<p>' + elemento + '</p>';
+			}
+		}
+
+		function informacion(elEvento) {
+			let evento = elEvento || window.event;
+			switch (evento.type) {
+				case 'mousemove':
+					document.getElementById('info').style.backgroundColor = '#FFFFFF';
+					let ie = navigator.userAgent.toLowerCase().indexOf('msie') != -1;
+					let coordX, coordY, coordXfinal, coordYfinal;
+					if (ie) {
+						if (document.documentElement && document.documentElement.scrollTop) {
+							coordXfinal = evento.clientX + document.documentElement.scrollLeft;
+							coordYfinal = evento.clientY + document.documentElement.scrollTop;
+						}
+						else {
+							coordXfinal = evento.clientX + document.body.scrollLeft;
+							coordYfinal = evento.clientY + document.body.scrollTop;
+						}
+					}
+					else {
+						coordXfinal = evento.pageX;
+						coordYfinal = evento.pageY;
+					}
+					coordX = evento.clientX;
+					coordY = evento.clientY;
+					muestraInformacion(['Ratón', 'Navegador [' + coordX + ', ' + coordY + ']', 
+					'Pagina [' + coordXfinal + ', ' + coordYfinal + ']']);
+					break;
+				case 'keypress':
+					document.getElementById('info').style.backgroundColor = '#CCE6FF';
+					let caracter = evento.charCode || evento.keyCode;
+					let letra = String.fromCharCode(caracter);
+					let codigo = letra.charCodeAt(0);
+					muestraInformacion(['Teclado', 'Carácter [' + letra + ']', 'Código [' + codigo + ']']);
+					break;
+				case 'click':
+					document.getElementById('info').style.backgroundColor = '#FFFFCC';
+					break;
+			}
+		}
+
+
+		document.onmousemove = informacion;
+		document.onkeypress = informacion;
+		document.onclick = informacion;
+
+	</script>
+</head>
+
+<body>
+	<div id="info"></div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>

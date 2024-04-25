@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .campo-invalido {
+            border: 2px solid red;
+            color: red;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        span.error {
+            color: red;
+            font-size: 15px;
+            margin-top: 0.25rem;
+            margin-left: 15px;
+        }
+
+        .input-group-append {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-primary text-white py-4">
+        <h1 class="m-0">Registro de Usuario</h1>
+    </div>
+
+    <form name="registro" action method class="w-75 mx-auto mt-5">
+        <div class="container-fluid">
+            <div class="input-group w-25">
+                <label for="nombre" class="input-group-text">Nombre </label>
+                <input type="text" name="nombre" id="nombre" class="form-control">
+            </div>
+            <span id="error-nombre" class="oculto error">El campo no debe estar vacío</span>
+        </div>
+
+        <div class="container-fluid">
+            <div class="input-group w-25 mt-4">
+                <label for="apellido" class="input-group-text">Apellido </label>
+                <input type="text" name="apellido" id="apellido" class="form-control">
+            </div>
+            <span id="error-apellido" class="oculto error">El campo no debe estar vacío</span>
+        </div>
+
+        <div class="container-fluid">
+            <div class="input-group w-25 mt-4">
+                <label for="dni" class="input-group-text">DNI </label>
+                <input type="text" name="dni" id="dni" class="form-control">
+            </div>
+            <span id="error-dni" class="oculto error">El DNI introducido no es válido</span>
+        </div>
+
+        <div class="container-fluid">
+            <div class="input-group w-50 mt-4">
+                <label for="email" class="input-group-text">Correo Electrónico</label>
+                <input type="text" class="form-control" name="email">
+            </div>
+            <span id="error-email" class="oculto error">El correo introducido no es válido</span>
+        </div>
+
+        <div class="container-fluid">
+            <div class="input-group w-25 mt-4">
+                <label for="contrasenia" class="input-group-text">Contraseña: </label>
+                <input type="password" name="contrasenia" class="form-control">
+                <button class="btn btn-outline-secondary" type="button" id="vercontrasenia"><i
+                        class="bi bi-eye"></i></button>
+            </div>
+            <span id="error-contrasenia" class="oculto error">La contraseña introducida no es válida</span>
+        </div>
+
+        <div class="container-fluid">
+            <div class="input-group w-25 mt-4">
+                <label for="contrasenia_confirmacion" class="input-group-text">Confirmar Contraseña: </label>
+                <input type="password" name="contrasenia_confirmacion" id="contrasenia_confirmacion"
+                    class="form-control">
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="input-group w-25 mt-4">
+                <label for="fecha_nacimiento" class="input-group-text">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <span id="error-fecha" class="oculto error">Debe ser mayor de edad</span>
+        </div>
+
+        <div class="input-group w-25 mt-4">
+            <button type="submit" class="form-control bg-primary text-light" id="enviar" name="enviar">Enviar</button>
+        </div>
+    </form>
+
+    <script defer>
+        let formulario = document.forms.registro;
+
+        // Método para mostrar contraseña al pasar el ratón sobre el icono de ojo
+        document.getElementById('vercontrasenia').addEventListener('mouseover', verContrasenia);
+
+        document.getElementById('vercontrasenia').addEventListener('mouseout', esconderContrasenia);
+        function verContrasenia(elEvento) {
+            this.previousElementSibling.type = 'text';
+        }
+
+        function esconderContrasenia(elEvento) {
+            this.previousElementSibling.type = 'password';
+        }
+        document.getElementById('nombre').addEventListener('input',pasarAMayusculas);
+        document.getElementById('apellido').addEventListener('input',pasarAMayusculas);
+        document.getElementById('dni').addEventListener('input',pasarAMayusculas);
+        // Método para convertir nombre y apellidos a mayúsculas
+        function pasarAMayusculas() {
+            formulario.nombre.value = formulario.nombre.value.toUpperCase();
+            formulario.apellido.value = formulario.apellido.value.toUpperCase();
+            formulario.dni.value = formulario.dni.value.toUpperCase();
+        }
+
+        // Método para comprobar DNI
+        function comprobarDNI() {
+            let dni = formulario.dni.value;
+            let numerosDNI = dni.substring(0, 8);
+            let letrasDNI = 'TRWAGMYFPDXBNJZSQVHLCKE';
+            let letraCalculada = letrasDNI.charAt(numerosDNI % 23);
+            if (dni === numerosDNI.concat(letraCalculada)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Método para comprobar correo electrónico
+        function comprobarCorreo() {
+            let correo = formulario.email.value;
+            if (correo.match('^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Z|a-z]{2,}$')) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Método para comprobar contraseña
+        function comprobarContrasena() {
+            let contrasenia = formulario.contrasenia.value;
+            let contrConf = formulario.contrasenia_confirmacion.value;
+            if (contrasenia.match("^[A-Za-z0-9]{2,}$") && contrasenia === contrConf) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Método para comprobar edad
+        function comprobarEdad() {
+            let fechaNacimiento = new Date(formulario.fecha_nacimiento.value);
+            let hoy = new Date();
+
+            if (hoy.getFullYear() - fechaNacimiento.getFullYear() > 18) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        // Método para validar formulario antes de enviarlo
+        formulario.addEventListener('submit', validarFormulario)
+        function validarFormulario() {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+            let formularioValido = true;
+
+            // Validar cada campo
+            if (formulario.nombre.value.trim() === '') {
+                mostrarError('error-nombre');
+                formularioValido = false;
+            } else {
+                ocultarError('error-nombre');
+            }
+
+            if (formulario.apellido.value.trim() === '') {
+                mostrarError('error-apellido');
+                formularioValido = false;
+            } else {
+                ocultarError('error-apellido');
+            }
+
+            if (!comprobarDNI()) {
+                mostrarError('error-dni');
+                formularioValido = false;
+            } else {
+                ocultarError('error-dni');
+            }
+
+            if (!comprobarCorreo()) {
+                mostrarError('error-email');
+                formularioValido = false;
+            } else {
+                ocultarError('error-email');
+            }
+
+            if (!comprobarContrasena()) {
+                mostrarError('error-contrasenia');
+                formularioValido = false;
+            } else {
+                ocultarError('error-contrasenia');
+            }
+
+            if (!comprobarEdad()) {
+                mostrarError('error-fecha');
+                formularioValido = false;
+            } else {
+                ocultarError('error-fecha');
+            }
+
+            // Si el formulario es válido, enviarlo
+            if (formularioValido) {
+                // Procesar el formulario (enviarlo al servidor, etc.)
+                formulario.submit();
+            }
+        };
+
+        function mostrarError(id) {
+            let elementoError = document.getElementById(id);
+            elementoError.classList.remove('oculto');
+            let campo = document.getElementsByName(elementoError.id.replace('error-', ''))[0];
+            if(campo !=null){
+            campo.classList.add('campo-invalido');
+            }
+        }
+
+        function ocultarError(id) {
+            let elementoError = document.getElementById(id);
+            elementoError.classList.add('oculto');
+            let campo = document.getElementsByName(elementoError.id.replace('error-', ''))[0];
+            if(campo !=null){
+            campo.classList.remove('campo-invalido');
+            }
+        }
+    </script>
+</body>
+
+</html>
